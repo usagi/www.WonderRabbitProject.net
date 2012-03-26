@@ -53,9 +53,56 @@ Next, try a variable:
     > a + 1
     2
 
-`var` is a language keyword. The effect is local variable declaration.
+`var` is a language keyword. The effect is local variable declaration. 
 
-<div class="note">Note: In Windows, press `Win+R` and invoke the command `cmd` to run the cmd.exe . if you run the Node.js interpreter directory then you invoke the command `node` with the prompt.</div>
+<div>Note: Why/What's **"undefined"**? It's a type and eval problem, but you **don't worry now**.</div>
+
+Congratulations! You got the master of **local-variable**. :)
+
+Next, you can define and use a **function**. Try:
+
+    > function(x){ return x + 1; }(0)
+    1
+    > function(x){ return x + 1; }
+    [Function]
+
+
+    > var f = function(a){ return a + 1;}
+    undefined
+    > f
+    [Function]
+    > f(3)
+    4
+
+Don't worry an "undefined", you can use the function useful and functionaly now. :)
+
+Congratulations! you got the master of **function**, maybe. :) So, maybe. :)
+
+The finally, write a source code to a file, and run the first your JavaScript program. Try, write a source code with text-editor as you like and save with ".js" file-extension.
+
+[your-source.js]
+
+    var n = 0;
+    var f = function(){ console.log("Hello, JavaScript! " ++ ++n); }
+    f();
+    f(); f();
+    f(); f(); f();
+
+And, run on your terminal with the `node` command.
+
+    % node your-source.js
+    Hello, JavaScript! 1
+    Hello, JavaScript! 2
+    Hello, JavaScript! 3
+    Hello, JavaScript! 4
+    Hello, JavaScript! 5
+    Hello, JavaScript! 6
+
+<div class="note">
+
+Note: In Windows, press `Win+R` and invoke the command `cmd` to run the cmd.exe . if you run the Node.js interpreter directory then you invoke the command `node` with the prompt.
+
+</div>
 
 
 <h3 id="1-misc.">#1-misc.</h3>
@@ -70,7 +117,11 @@ I created this page. You can check and study again with it. Enjoy your learning!
 
 There are usefull, simple and lightweight text-editors:
 
+<div class="recommend">
+
 (Recommend)
+
+<div class="inner-li-to-tile">
 
 * for Windows
     * [notepad++][notepad++]
@@ -82,10 +133,16 @@ There are usefull, simple and lightweight text-editors:
     * [Kate][Kate]
     * [GEdit][GEdit]
 
+</div>
+
 [notepad++]: http://notepad-plus-plus.org/
 [CotEditor]: http://sourceforge.jp/projects/coteditor/
 [Kate]:      http://kate-editor.org/
 [GEdit]:     http://projects.gnome.org/gedit/
+
+</div>
+
+<div class="optional">
 
 (Optional)
 
@@ -114,25 +171,26 @@ And, there are IDEs:
 [Eclipse]:      http://www.eclipse.org/
 [Eclipse(ja)]:  http://mergedoc.sourceforge.jp/
 
+</div>
+
 <h2 id="2">#2 preparing git with how many rabbits pairs</h2>
 
 There is one problem here:
 
-> 0. A newly born pair of rabbits, one male, one female, are put in a field.
-> 0. Rabbits are able to mate at the age of one month so that at the end of its second month a female can produce another pair of rabbits.
-> 0. Rabbits never die and a mating pair always produces one new pair (one male, one female) every month from the second month on.
-> 0. How many pairs will there be in one year?
+> 1. A newly born pair of rabbits, one male, one female, are put in a field.
+> 1. Rabbits are able to mate at the age of one month so that at the end of its second month a female can produce another pair of rabbits.
+> 1. Rabbits never die and a mating pair always produces one new pair (one male, one female) every month from the second month on.
+> 1. How many pairs will there be in one year?
 
-Reference: http://en.wikipedia.org/wiki/Fibonacci\_number#Origins
+Reference: [http://en.wikipedia.org/wiki/Fibonacci\_number#Origins][en.wikipedia/Fibonacci_number#Origins]
+
+[en.wikipedia/Fibonacci_number#Origins]: http://en.wikipedia.org/wiki/Fibonacci_number#Origins
 
 Today, we try the problem use the JavaScript with social developing on GitHub!
 
-### 
+<div class="note">Note: Coming soon! :)</div>
 
->    main = print $ reverse' [1 .. 10]
-> main = print $ reverse' [1 .. 10]
-
-<h3 id="2-misc.">#2-misc.</h3>
+<!--h3 id="2-misc.">#2-misc.</h3-->
 
 <!--
 <h2 id="#N">#N </h2>

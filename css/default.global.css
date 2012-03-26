@@ -78,6 +78,11 @@ article {
 
 h1,h2,h3,h4,h5{ margin: 0; padding: 0;}
 
+article > p,
+article > div {
+  margin: 3mm 1mm;
+}
+
 article h1,
 article h2,
 article h3,
@@ -168,4 +173,62 @@ nav .vh-list li ul li:first-child {
   content: "";
 }
 
+.inner-li-to-tile > ul > li {
+  float: left;
+  padding: 1.33mm;
+}
+
+.inner-li-to-tile > ul:after {
+  display: block;
+  clear: left;
+  content: "";
+}
+
+.recommend {
+  opacity:0.75;
+  background-color: hsla( 300, 100%, 97.3%, 1.00 );
+  border: 0.33mm solid hsla( 0, 0%, 80.0%, 1.00 );
+  border-radius: 1mm 6mm;
+  font-size: 4.8mm;
+  line-height: 5.0mm;
+  overflow: auto;
+  padding: 1.66mm 3.5mm;
+  margin: 6mm 0;
+}
+
+.recommend:hover{
+  opacity:1;
+}
+
+.optional {
+  opacity:0.45;
+  background-color: hsla( 60, 100%, 97.3%, 1.00 );
+  border: 0.33mm solid hsla( 0, 0%, 80.0%, 1.00 );
+  border-radius: 1mm 6mm;
+  font-size: 4.8mm;
+  line-height: 5.0mm;
+  overflow: auto;
+  padding: 1.66mm 3.5mm;
+  margin: 6mm 0;
+}
+
+.optional:hover {
+  opacity:1;
+}
+
+.note {
+  opacity:0.45;
+  background-color: hsla( 0, 100%, 97.3%, 1.00 );
+  border: 0.33mm solid hsla( 0, 0%, 80.0%, 1.00 );
+  border-radius: 1mm 6mm;
+  font-size: 4.8mm;
+  line-height: 5.0mm;
+  overflow: auto;
+  padding: 1.66mm 3.5mm;
+  margin: 6mm 0;
+}
+
+.note:hover {
+  opacity:1;
+}
 

@@ -85,8 +85,44 @@ undefined
 &gt; a + 1
 2</code></pre>
 <p><code>var</code> is a language keyword. The effect is local variable declaration.</p>
+<div>
+Note: Why/What’s <strong>“undefined”</strong>? It’s a type and eval problem, but you <strong>don’t worry now</strong>.
+</div>
+
+<p>Congratulations! You got the master of <strong>local-variable</strong>. :)</p>
+<p>Next, you can define and use a <strong>function</strong>. Try:</p>
+<pre><code>&gt; function(x){ return x + 1; }(0)
+1
+&gt; function(x){ return x + 1; }
+[Function]
+
+
+&gt; var f = function(a){ return a + 1;}
+undefined
+&gt; f
+[Function]
+&gt; f(3)
+4</code></pre>
+<p>Don’t worry an “undefined”, you can use the function useful and functionaly now. :)</p>
+<p>Congratulations! you got the master of <strong>function</strong>, maybe. :) So, maybe. :)</p>
+<p>The finally, write a source code to a file, and run the first your JavaScript program. Try, write a source code with text-editor as you like and save with “.js” file-extension.</p>
+<p>[your-source.js]</p>
+<pre><code>var n = 0;
+var f = function(){ console.log(&quot;Hello, JavaScript! &quot; ++ ++n); }
+f();
+f(); f();
+f(); f(); f();</code></pre>
+<p>And, run on your terminal with the <code>node</code> command.</p>
+<pre><code>% node your-source.js
+Hello, JavaScript! 1
+Hello, JavaScript! 2
+Hello, JavaScript! 3
+Hello, JavaScript! 4
+Hello, JavaScript! 5
+Hello, JavaScript! 6</code></pre>
 <div class="note">
-Note: In Windows, press <code>Win+R</code> and invoke the command <code>cmd</code> to run the cmd.exe . if you run the Node.js interpreter directory then you invoke the command <code>node</code> with the prompt.
+
+<p>Note: In Windows, press <code>Win+R</code> and invoke the command <code>cmd</code> to run the cmd.exe . if you run the Node.js interpreter directory then you invoke the command <code>node</code> with the prompt.</p>
 </div>
 
 
@@ -105,7 +141,11 @@ tell me a text-editor
 </h4>
 
 <p>There are usefull, simple and lightweight text-editors:</p>
+<div class="recommend">
+
 <p>(Recommend)</p>
+<div class="inner-li-to-tile">
+
 <ul>
 <li>for Windows
 <ul>
@@ -123,6 +163,17 @@ tell me a text-editor
 <li><a href="http://projects.gnome.org/gedit/">GEdit</a></li>
 </ul></li>
 </ul>
+</div>
+
+
+
+
+
+
+</div>
+
+<div class="optional">
+
 <p>(Optional)</p>
 <p>For professional:</p>
 <ul>
@@ -141,28 +192,28 @@ tell me a text-editor
 <li><a href="http://www.netbeans.org/">NetBeans</a> (<a href="http://ja.netbeans.org/">-&gt;ja</a>)</li>
 <li><a href="http://www.eclipse.org/">Eclipse</a> (<a href="http://mergedoc.sourceforge.jp/">-&gt;ja</a>)</li>
 </ul>
+</div>
+
 <h2 id="2">
 #2 preparing git with how many rabbits pairs
 </h2>
 
 <p>There is one problem here:</p>
 <blockquote>
-<ol start="0" style="list-style-type: decimal">
+<ol style="list-style-type: decimal">
 <li>A newly born pair of rabbits, one male, one female, are put in a field.</li>
 <li>Rabbits are able to mate at the age of one month so that at the end of its second month a female can produce another pair of rabbits.</li>
 <li>Rabbits never die and a mating pair always produces one new pair (one male, one female) every month from the second month on.</li>
 <li>How many pairs will there be in one year?</li>
 </ol>
 </blockquote>
-<p>Reference: http://en.wikipedia.org/wiki/Fibonacci_number#Origins</p>
+<p>Reference: <a href="http://en.wikipedia.org/wiki/Fibonacci_number#Origins">http://en.wikipedia.org/wiki/Fibonacci_number#Origins</a></p>
 <p>Today, we try the problem use the JavaScript with social developing on GitHub!</p>
-<h3 id="section"></h3>
-<blockquote>
-<p>main = print $ reverse’ [1 .. 10] main = print $ reverse’ [1 .. 10]</p>
-</blockquote>
-<h3 id="2-misc.">
-#2-misc.
-</h3>
+<div class="note">
+Note: Coming soon! :)
+</div>
+
+<!--h3 id="2-misc.">#2-misc.</h3-->
 
 <!--
 <h2 id="#N">#N </h2>
