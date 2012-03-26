@@ -1,0 +1,58 @@
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode, table.sourceCode pre {
+    border: medium none;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+td.lineNumbers {
+    border-right: 1px solid #AAAAAA;
+    color: #AAAAAA;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: right;
+}
+td.sourceCode {
+    padding-left: 5px;
+}
+pre.sourceCode span.kw {
+    color: #007020;
+    font-weight: bold;
+}
+pre.sourceCode span.dt {
+    color: #902000;
+}
+pre.sourceCode span.dv {
+    color: #40A070;
+}
+pre.sourceCode span.bn {
+    color: #40A070;
+}
+pre.sourceCode span.fl {
+    color: #40A070;
+}
+pre.sourceCode span.ch {
+    color: #4070A0;
+}
+pre.sourceCode span.st {
+    color: #4070A0;
+}
+pre.sourceCode span.co {
+    color: #60A0B0;
+    font-style: italic;
+}
+pre.sourceCode span.ot {
+    color: #007020;
+}
+pre.sourceCode span.al {
+    color: red;
+    font-weight: bold;
+}
+pre.sourceCode span.fu {
+    color: #06287E;
+}
+pre.sourceCode span.re {
+}
+pre.sourceCode span.er {
+    color: red;
+    font-weight: bold;
+}

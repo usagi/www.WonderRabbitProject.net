@@ -1,0 +1,35 @@
+*:
+  font ->
+    family: 'schoolbell', cursive
+
+body:
+  width: 640px
+  margin: auto
+
+.vh-list:
+  list-style ->
+    type: none
+  padding ->
+    left: 16px
+  ul, li:
+    padding ->
+      left: 0
+  li:
+    ul:
+      li:
+        display: inline
+        margin ->
+          right: 4px
+        padding ->
+          left: 4px
+          right: 4px
+        border ->
+          radius: 8px
+        background ->
+          color: hsla(0, 0%, 95%, 0.70)
+  a:hover:
+    border ->
+      radius: 8px
+    background ->
+      color: hsla(0, 0%, 85%, 0.90)
+
