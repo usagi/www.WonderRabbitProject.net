@@ -7,12 +7,12 @@ import Hakyll
 --import Text.CSS.CleverCSS
 --import System.IO.Unsafe
 
-config :: HakyllConfiguration
-config = defaultHakyllConfiguration { deployCommand = a }
-  where a = "rsync -av --delete _site/ WonderRabbitProject.net:/srv/http/WonderRabbitProject.net/www/v20.trunk/"
+conf :: HakyllConfiguration
+conf = defaultHakyllConfiguration { deployCommand = a }
+  where a = "git commit -am \"hakyll deploy\" && git push"
 
 main :: IO ()
-main = hakyll $ do
+main = hakyllWith conf $ do
   
   match "favicon.ico" $ do
     route   idRoute
