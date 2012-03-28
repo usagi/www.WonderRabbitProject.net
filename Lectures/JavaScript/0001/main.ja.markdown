@@ -4,7 +4,7 @@ published: 2012-03-28 23:30
 updated:   2012-03-28 23:30
 --
 
-<p class="caption"><pre>Published: $published$
+<pre class="datetime">Published: $published$
 Updated  : $updated$</pre></p>
 
 <nav>

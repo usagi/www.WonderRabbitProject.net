@@ -247,6 +247,7 @@ p.caption:after{
   content: "";
 }
 
-p.caption pre{
+pre.datetime{
   width: 45mm;
+  background-color: hsla( 60, 100%, 97.3%, 1.00 );
 }
