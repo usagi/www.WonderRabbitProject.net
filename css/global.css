@@ -164,6 +164,10 @@ nav .vh-list li ul li:first-child {
   width: 16mm;
 }
 
+img {
+  max-width: 100%;
+}
+
 .inner-images-to-right img{
   float: right;
 }
