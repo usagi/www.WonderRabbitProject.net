@@ -13,23 +13,9 @@ title: Lectures
     * [#2 social development! on GitHub][git#2]
 -->
 
-* [JavaScript][js] （連載執筆中！）
-    * [1.JavaScriptで楽しみましょう][js-0001]
+* [JavaScript](JavaScript/) （連載執筆中！）
+    * [1.JavaScriptで楽しみましょう](JavaScript/0001/)
 <!--    * [#2 preparing git][js#2]-->
 
 <!--*   Linux (still thinking about a content)-->
-
-[C++]:    C++/          "C++ - Lectures"
-[xna-cs]: xna-cs/       "XNA/C# - Lectures"
-
-[git]:    Git/main.html          "Git - Lectures"
-[git#1]:  Git/main.html#1
-[git#2]:  Git/main.html#2
-
-[js]:     JavaScript/main.html   "javascript - Lectures"
-[js-0001]:   JavaScript/main.html
-[js-0002]:   JavaScript/main.html
-
-[Linux]:  Linux/        "Linux - Lectures"
-
 

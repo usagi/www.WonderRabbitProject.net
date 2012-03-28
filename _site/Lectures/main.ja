@@ -52,26 +52,12 @@
 -->
 
 <ul>
-<li><a href="JavaScript/main.html" title="javascript - Lectures">JavaScript</a> （連載執筆中！）
+<li><a href="JavaScript/">JavaScript</a> （連載執筆中！）
 <ul>
-<li><a href="JavaScript/main.html">1.JavaScriptで楽しみましょう</a> <!--    * [#2 preparing git][js#2]--></li>
+<li><a href="JavaScript/0001/">1.JavaScriptで楽しみましょう</a> <!--    * [#2 preparing git][js#2]--></li>
 </ul></li>
 </ul>
 <!--*   Linux (still thinking about a content)-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
