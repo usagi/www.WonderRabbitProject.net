@@ -1,16 +1,3 @@
-html * {
-  text-autospace: ideograph-numeric, ideograph-alphai;
-  line-height: 1.33em;
-  font-size: 5.0mm;
-  font-family: "schoolbell", cursive;
-     -moz-transition-property: background,color,opacity,box-shadow;
-  -webkit-transition-property: background,color,opacity,box-shadow;
-     -moz-transition-timing-function: ease-out;
-  -webkit-transition-timing-function: ease-out;
-     -moz-transition-duration: 0.20s;
-  -webkit-transition-duration: 0.20s;
-}
-
 body {
   width: 200mm;
   margin: auto;
