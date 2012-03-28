@@ -248,6 +248,9 @@ p.caption:after{
 }
 
 pre.datetime{
+  position:absolute;
+  right: 0;
   width: 45mm;
   background-color: hsla( 60, 100%, 97.3%, 1.00 );
+  overflow: hidden;
 }
