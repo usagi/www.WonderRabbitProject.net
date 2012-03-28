@@ -247,3 +247,6 @@ p.caption:after{
   content: "";
 }
 
+p.caption pre{
+  width: 45mm;
+}
