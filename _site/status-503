@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 
 <meta charset="utf-8">
-<title>404 Not Found Error - Wonder Rabbit Project</title>
+<title>503 Service Unavailable - Wonder Rabbit Project</title>
 <style>*{align:center;margin:auto;width:100%}</style>
 
 <h1>Wonder Rabbit Project</h1>
 
 <article>
-  <h1>404 Not Found Error</h1>
+  <h1>503 Service Unavailable</h1>
   <hr>
   Note: <a href="./">The top page of the website is hare</a>.
   <p></p>

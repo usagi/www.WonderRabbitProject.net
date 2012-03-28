@@ -1,4 +1,4 @@
 --
-title: 404 Not Found Error
+title: 500 Internal Server Error
 --
 
