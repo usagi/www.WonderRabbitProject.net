@@ -1,6 +1,11 @@
 --
-title: 1. JavaScriptで楽しみましょう - JavaScript - Lectures
+title:     1. JavaScriptで楽しみましょう - JavaScript - Lectures
+published: 2012-03-28 23:30
+updated:   2012-03-28 23:30
 --
+
+<p class="caption"><pre>Published: $published$
+Updated  : $updated$</pre></p>
 
 <nav>
 

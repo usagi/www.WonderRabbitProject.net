@@ -41,7 +41,10 @@
 
 <article>
   <h1>1. JavaScriptで楽しみましょう - JavaScript - Lectures</h1>
-  <nav>
+  <p class="caption"><pre>Published: 2012-03-28 23:30
+Updated  : 2012-03-28 23:30</pre></p>
+
+<nav>
 <h5 id="内容">内容</h5>
 <ul>
 <li><a href="#はじめの環境整備">1.1.はじめの環境整備</a></li>
