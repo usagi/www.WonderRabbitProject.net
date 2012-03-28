@@ -259,7 +259,34 @@ Note: 但し私は Mac OS X の実機を所有していないので、 それに
 </div>
 
 <h3 id="a.3.windowsとcmdでの実行例">1.A.3.Windowsとcmdでの実行例</h3>
-<p><img src="images/win-cmd-node-1.png" alt="1.A.3.-1"></img> <img src="images/win-cmd-node-2.png" alt="1.A.3.-2"></img> <img src="images/win-cmd-node-3.png" alt="1.A.3.-3"></img> <img src="images/win-cmd-node-4.png" alt="1.A.3.-4"></img> <img src="images/win-cmd-node-5.png" alt="1.A.3.-5"></img> <img src="images/win-cmd-node-6.png" alt="1.A.3.-6"></img> <img src="images/win-cmd-node-7.png" alt="1.A.3.-7"></img></p>
+<p>↓<code>Win+R</code>→<code>cmd</code>で端末を起動:</p>
+<div class="figure">
+<img src="images/win-cmd-node-1.png" alt="1.A.3.-1"></img><p class="caption">1.A.3.-1</p>
+</div>
+<p>↓端末（cmd.exe）が起動した！:</p>
+<div class="figure">
+<img src="images/win-cmd-node-2.png" alt="1.A.3.-2"></img><p class="caption">1.A.3.-2</p>
+</div>
+<p>↓<code>node</code>コマンドを実行してNode.jsインタープリターを使ってみる:</p>
+<div class="figure">
+<img src="images/win-cmd-node-3.png" alt="1.A.3.-3"></img><p class="caption">1.A.3.-3</p>
+</div>
+<p>↓<code>cd</code>コマンドで「カレントディレクトリ」（現在居るフォルダの階層）を移動できる。 但し、ディレクトリ（＝フォルダ）の名前に半角スペースが入っている場合には名前を<code>&quot;</code>で囲んであげないとダメ。:</p>
+<div class="figure">
+<img src="images/win-cmd-node-4.png" alt="1.A.3.-4"></img><p class="caption">1.A.3.-4</p>
+</div>
+<p>↓メモ帳は<code>notepad</code>コマンドでも起動できて、<code>nodepad hoge.js</code>みたいにファイル名を指定して作り始める事もできる。 ソースを編集したなら保存しよう:</p>
+<div class="figure">
+<img src="images/win-cmd-node-5.png" alt="1.A.3.-5"></img><p class="caption">1.A.3.-5</p>
+</div>
+<p>↓<code>node hoge.js</code>で実行できました！:</p>
+<div class="figure">
+<img src="images/win-cmd-node-6.png" alt="1.A.3.-6"></img><p class="caption">1.A.3.-6</p>
+</div>
+<p>↓<code>cd ..</code>とやると１つだけ上位（親）のディレクトリへ移動できます。 ちなみに、実はここで<code>node &quot;My Documents¥hoge.js&quot;</code>の様にディレクトリやファイルの階層を<code>¥</code>で繋いで 「ファイルのパス」を現在のディレクトリからの相対的な位置関係を示して実行する事もできます:</p>
+<div class="figure">
+<img src="images/win-cmd-node-7.png" alt="1.A.3.-7"></img><p class="caption">1.A.3.-7</p>
+</div>
 </article>
 
 <hr>
