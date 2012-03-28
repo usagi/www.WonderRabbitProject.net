@@ -40,7 +40,6 @@ main = hakyllWith conf $ do
     route   $ setExtension ""
     compile $ pageCompiler
       >>> applyTemplateCompiler "templates/status.html"
-      >>> relativizeUrlsCompiler
 
   match "**.markdown" $ do
     route   $ setExtension ""
