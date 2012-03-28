@@ -1,5 +1,5 @@
 --
-title: 1. JavaScript あそび  - JavaScript - Lectures
+title: 1. JavaScriptで楽しみましょう - JavaScript - Lectures
 --
 
 <nav>
