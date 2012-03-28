@@ -9,7 +9,7 @@ import Hakyll
 
 conf :: HakyllConfiguration
 conf = defaultHakyllConfiguration { deployCommand = a }
-  where a = "git add . && git commit -m \"hakyll deploy\" && git push"
+  where a = "rsync -av --delete _site/ www.WonderRabbitProject.net:/srv/http/WonderRabbitProject.net/www/test/"
 
 main :: IO ()
 main = hakyllWith conf $ do
