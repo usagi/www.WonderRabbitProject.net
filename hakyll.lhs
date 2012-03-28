@@ -37,7 +37,7 @@ main = hakyllWith conf $ do
   match "templates/*" $ compile templateCompiler
   
   match "**.markdown" $ do
-    route   $ setExtension "html"
+    route   $ setExtension ""
     compile $ pageCompiler
       >>> applyTemplateCompiler "templates/default.html"
       >>> relativizeUrlsCompiler
