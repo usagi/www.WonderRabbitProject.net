@@ -237,3 +237,13 @@ img {
   opacity:1;
 }
 
+p.caption {
+  float:right;
+}
+
+p.caption:after{
+  display: block;
+  clear: left;
+  content: "";
+}
+
