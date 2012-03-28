@@ -151,7 +151,7 @@ header > nav{
   border-radius: 2mm;
   padding: 2mm;
   width: 40mm;
-  position:absolute;
+  position: fixed;
   right:204mm;
 }
 
@@ -162,6 +162,10 @@ header > nav:hover{
 nav .vh-list li ul li:first-child {
   display: inline-block;
   width: 16mm;
+}
+
+img {
+  max-width: 100%;
 }
 
 .inner-images-to-right img{
@@ -230,6 +234,29 @@ nav .vh-list li ul li:first-child {
 }
 
 .note:hover {
+  opacity:1;
+}
+
+p.caption {
+  float:right;
+}
+
+p.caption:after{
+  display: block;
+  clear: left;
+  content: "";
+}
+
+pre.datetime{
+  position:absolute;
+  right: 0;
+  width: 60mm;
+  background-color: hsla( 60, 100%, 97.3%, 1.00 );
+  overflow: hidden;
+  opacity: 0.45;
+}
+
+pre.datetime:hover{
   opacity:1;
 }
 
