@@ -66,11 +66,11 @@
 <p>[ToDo:ここにJavaScriptの仲間たちの絵を挿入する]</p>
 <h2 id="電卓とjavascriptの式と関数の考え方">1.2.電卓とJavaScriptの式と関数の考え方</h2>
 <p>さて、Node.jsの準備は（たぶん）できたかな？ 使える状態になっているか、早速試してみよう。</p>
-<p>端末（Windowsでは「[コマンドプロンプト][cmd]」と呼ばれる事が多いよ）を起動して、 <code>node</code>コマンドを実行してみよう。</p>
+<p>端末（Windowsでは「コマンドプロンプト」と呼ばれる事が多いよ）を起動して、 <code>node</code>コマンドを実行してみよう。</p>
 <pre><code>(YOUR-PC PROMPT %) node
 &gt; </code></pre>
 <div class="note">
-Note: Windowsで端末を起動する最も手っ取り早い方法は「Win+R→cmd⏎」、 [NT6][NT6]では「Win→cmd」でも検索機能を経て起動できる。
+Note: Windowsで端末を起動する最も手っ取り早い方法は「Win+R→cmd⏎」、 NT6では「Win→cmd」でも検索機能を経て起動できる。
 </div>
 
 <div class="note">

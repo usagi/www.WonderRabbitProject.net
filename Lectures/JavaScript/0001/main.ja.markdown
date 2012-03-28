@@ -46,7 +46,7 @@ JavaScript処理系（内部的に[V8][V8]を使用）の１つで、
 さて、Node.jsの準備は（たぶん）できたかな？
 使える状態になっているか、早速試してみよう。
 
-端末（Windowsでは「[コマンドプロンプト][cmd]」と呼ばれる事が多いよ）を起動して、
+端末（Windowsでは「コマンドプロンプト」と呼ばれる事が多いよ）を起動して、
 `node`コマンドを実行してみよう。
 
     (YOUR-PC PROMPT %) node
@@ -54,7 +54,7 @@ JavaScript処理系（内部的に[V8][V8]を使用）の１つで、
 
 <div class="note">
 Note: Windowsで端末を起動する最も手っ取り早い方法は「Win+R→cmd⏎」、
-[NT6][NT6]では「Win→cmd」でも検索機能を経て起動できる。
+NT6では「Win→cmd」でも検索機能を経て起動できる。
 </div>
 
 <div class="note">
