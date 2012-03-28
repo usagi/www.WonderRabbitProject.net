@@ -5,6 +5,9 @@
 <link rel="stylesheet" type="text/css" href="../../../css/default.css">
 <link rel="stylesheet" type="text/css" href="../../../css/syntax.css">
 
+<script type="text/javascript" src="http://site.decomoji.jp/js/Qvww6.js" charset="utf-8"></script>
+<script type="text/javascript">try{DecoMoji.load()}catch(e){}</script>
+
 <title>1. JavaScriptで楽しみましょう - JavaScript - Lectures - Wonder Rabbit Project</title>
 
 <header>
@@ -17,26 +20,27 @@
     <hr>
     <ul>
       <li>
-        <a href="../../../main.html">/main</a>
+        <a href="../../../main">/main</a>
         <ul>
-          <li><a href="../../../about.html">about</a>
+          <li><a href="../../../about">about</a>
+          <li><a href="../../../links">links</a>
         </ul>
       <li>
-        <a href="../../../lecture/main.html">/lecture/</a>
+        <a href="../../../Lectures/main">/Lectures/</a>
         <ul>
-          <li>
-            <a href="../../../lecture/Git/main.html">Git</a>
+          <!--li>
+            <a href="/Lecture/Git/main">Git</a>
             <ul>
               <li>
-                <a href="../../../lecture/Git/main.html#1">#1</a>
-                <a href="../../../lecture/Git/main.html#2">#2</a>
-            </ul>
+                <a href="/Lecture/Git/0001/main">1</a>
+                <a href="/Lecture/Git/0002/main">2</a>
+            </ul-->
           <li>
-            <a href="../../../lecture/JavaScript/main.html">JavaScript</a>
+            <a href="../../../Lecture/JavaScript/main.html">JavaScript</a>
             <ul>
               <li>
-                <a href="../../../lecture/JavaScript/main.html#1">#1</a>
-                <a href="../../../lecture/JavaScript/main.html#2">#2</a>
+                <a href="../../../Lecture/JavaScript/0001/main">1</a>
+                <a href="../../../Lecture/JavaScript/0002/main">2</a>
             </ul>
         </ul>
     </ul>
@@ -45,82 +49,144 @@
 <article>
   <h1>1. JavaScriptで楽しみましょう - JavaScript - Lectures</h1>
   <nav>
-<p>もくじ</p>
+<h5 id="内容">内容</h5>
 <ul>
-<li><p><a href="#1.1.">1.1. 環境整備</a></p></li>
-<li><a href="#1">#1 play the javascript</a>
+<li><a href="#1.1.">1.1.はじめの環境整備</a></li>
+<li><a href="#1.2.">1.2.電卓とJavaScriptの式と関数の考え方</a></li>
+<li><a href="#1.3.">1.3.変数を使って少しプログラムらしい事をしてみる</a></li>
+<li><a href="#1.4.">1.4.関数も使えたなら、もうプログラムらしいものも作れるね</a></li>
+<li><a href="#1.5.">1.5.プログラムをファイルに保存して実行してみよう</a></li>
+<li><a href="#1.A.">1.A.付録</a>
 <ul>
-<li><a href="#1-misc.">misc.</a>
-<ul>
-<li><a href="#1-misc.-once_more">tell me once more</a></li>
-<li><a href="#1-misc.-text_editor">tell me a text-editor</a></li>
+<li><a href="#1.A.1.">1.A.1.○○についてもう一度！</a></li>
+<li><a href="#1.A.2.">1.A.2.お勧めのテキストエディタを教えて下さい</a></li>
+<li><a href="#1.A.3">1.A.3.Windowsとcmdでの実行例</a></li>
 </ul></li>
-</ul></li>
-<li><p><a href="#2">#2 preparing git with how many rabbits pairs</a></p></li>
-<li><p>[1.misc.]</p></li>
 </ul>
 </nav>
 <h2 id="環境整備">1.1. 環境整備</h2>
-<p>さっそくですが、<a href="http://nodejs.org/">Node.js</a>をダウンロードして導入（インストール）しましょう。</p>
+<p>さっそくですが、 <a href="http://nodejs.org/">Node.js</a> をダウンロードして導入（インストール）しましょう。</p>
 <ul>
 <li><a href="http://nodejs.org/">Node.js</a></li>
 </ul>
-<p><a href="http://nodejs.org/">Node.js</a>は</p>
-<h2 id="1">
-#1 play the javascript
-</h2>
-
-<p>The first, download and install the “<a href="http://nodejs.org/">Node.js</a>”. Node.js is a very easy and very powerfull implement(included the <a href="http://code.google.com/p/v8/">V8</a> engine) and useful environment(e.g.: libraries with npm) of the JavaScript based on <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">ECMA-262</a> specification. ECMA-262 is the standardizationed of a JavaScript by <a href="http://www.ecma-international.org/">ECMA</a>.</p>
-<p>Next, run a terminal(;or [command prompt on Windows][cmd]) and type “node”.</p>
+<p><a href="http://nodejs.org/">Node.js</a>は柔軟でパワフルな JavaScript処理系（内部的に<a href="http://code.google.com/p/v8/">V8</a>を使用）の１つで、 使い勝手の良い便利なJavaScriptの環境（ライブラリ管理を省力化できるnpmとか） 一式が簡単に整います。ちなみに、JavaScriptと言うのは、 現在では<a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">ECMA-262</a>により言語仕様が標準化され、 ウェブブラウザーの組み込みスクリプト機能や、FLASHのActionScript、 そしてNode.jsなどの具体的な処理系はこの仕様に基づいて実装される様になっています。</p>
+<p>[ToDo:ここにJavaScriptの仲間たちの絵を挿入する]</p>
+<h2 id="電卓とjavascriptの式と関数の考え方">1.2.電卓とJavaScriptの式と関数の考え方</h2>
+<p>さて、Node.jsの準備は（たぶん）できたかな？ 使える状態になっているか、早速試してみよう。</p>
+<p>端末（Windowsでは「[コマンドプロンプト][cmd]」と呼ばれる事が多いよ）を起動して、 <code>node</code>コマンドを実行してみよう。</p>
 <pre><code>(YOUR-PC PROMPT %) node
 &gt; </code></pre>
-<p>Congraturations! It’s the prompt of the Node.js interpreter! Now, you can write and eval a code of the JavaScript.Try a calculation:</p>
+<div class="note">
+Note: Windowsで端末を起動する最も手っ取り早い方法は「Win+R→cmd⏎」、 [NT6][NT6]では「Win→cmd」でも検索機能を経て起動できる。
+</div>
+
+<div class="note">
+Note: 現在のWindowsはWindows NT系のOSであり、 NT6は6.2(Windows 8)、6.1(Window 7)、6.0(Windows Vista)など6.x系の総称。 メジャーバージョンが同一であればほぼ同じOSカーネルを使っていると思って構わない。 ちなみにWindows XPはNT5.1、Windows 2000はNT5.0。
+</div>
+
+<div class="note">
+Note: UNIX系OS（Mac OS X、Linuxなど）ではttyでも端末エミュレーターでも構わないし、 シェルもbashでもzshでもshでも何を使っても構わない。Windows系ではcmd.exeの他に、 PowerShellやSUAやmingwやcygwinという選択肢を使っても構わないが、 たぶん面倒だったり重かったりするのでお勧めしない。
+</div>
+
+<p>無事に<code>node</code>コマンドは実行できたかな？ 行の初めに入力を受け付ける鳥さんが居てカーソルが点滅していれば、 きっとNode.jsのインタープリターの起動に成功している。</p>
+<p>不幸にも起動できていない様な気がする場合には、とりあえずログオフ＆ログインしてみよう。 それで使えるようになったなら「パス」の設定の適用が必要だっただけだろう。 問題が他にありそうな場合は、素直に先生に相談する事。</p>
+<p>おめでとう！（だと嬉しい）</p>
+<p>さて、それでは早速JavaScriptのプログラムを実行してみようか。 Node.jsのインタープリターへ次の様な「式」を入力してみよう:</p>
 <pre><code>&gt; 1 + 1
 2</code></pre>
-<p>Congraturations!! You get the value with eval an expression as the JavaScript code. Try more expressions:</p>
+<p>またまたおめでとう！入力した式の計算結果が得られたね。 これは君が入力した「式」 （ただの算数の式だが、実はこれはJavaScriptの「式」でもある！） をJavaScriptの処理系、つまりここではNode.js（厳密に言えばその中のV8）が 「評価」し、その「式」の評価結果を表示してくれたんだ。</p>
+<p>さあ、もっと色々と計算させてみよう:</p>
 <pre><code>&gt; 1 + 2 + 3
 6
 &gt; 4 * 5 / 6
 3.3333333333333335
 &gt; 10 % 3
 1</code></pre>
-<p>It’s a good calculator. :) But, it is not calculator that is implement of <strong>the Programming Language JavaScript</strong>. Okay, you can use a variable, function, prototype and some features with it.</p>
-<p>Next, try a variable:</p>
+<p>これは良い電卓を手に入れたね！^^</p>
+<p>でも、実はこれ電卓なんかじゃないんだ…、 <strong>プログラミング言語JavaScript</strong>だったんだ！！</p>
+<div class="note">
+Note: 読者はここで『Ω ΩΩ ﾅ ﾅﾝﾀﾞｯﾃｰ!!』と反応する事。
+</div>
+
+<p>まあ、そういう訳なので、このNode.jsのインタープリターでは 「変数」とか「関数」とか、あと「プロトタイプ」とか使って プログラミングする事ができます。</p>
+<h2 id="変数を使って少しプログラムらしい事をしてみる">1.3.変数を使って少しプログラムらしい事をしてみる</h2>
+<p>さて、そんな訳でただの電卓からプログラムらしい何かをする為の第一歩として、 プログラミングの基礎部品の１つである<strong>「変数」</strong>を使ってみよう</p>
+<p>こんな感じで:</p>
 <pre><code>&gt; var a = 1
 undefined
 &gt; a
 1
 &gt; a + 1
-2</code></pre>
-<p><code>var</code> is a language keyword. The effect is local variable declaration.</p>
-<div>
-Note: Why/What’s <strong>“undefined”</strong>? It’s a type and eval problem, but you <strong>don’t worry now</strong>.
+2
+&gt; a = a * 3 + 2
+5
+&gt; a + 1
+6</code></pre>
+<p><code>var</code>というのは言語組み込みの特別なキーワードの１つで、 その「効果」は「ローカル変数を宣言する」だよ。</p>
+<div class="note">
+Note: 「<strong>undefined</strong>とか出てるけど大丈夫なんですかこれ？」と聞きたいかもしれない。 <strong>『大丈夫だ。問題ない。』</strong>…とりあえず今のところはね。 後でちゃんと説明するから安心して先へ進むといいよ。
 </div>
 
-<p>Congratulations! You got the master of <strong>local-variable</strong>. :)</p>
-<p>Next, you can define and use a <strong>function</strong>. Try:</p>
+<p>そうそう、おめでとう！！</p>
+<p>と、言い忘れていたよ。これでもう君は<strong>ローカル変数</strong>をマスターしたね！^^</p>
+<div class="note">
+Note: ここではまだ「ローカル」の意味は知らなくても大丈夫だよ。 少なくともこれで「ローカル変数」については使えるはずだしね。
+</div>
+
+<div class="note">
+Note: 例では何気なく宣言済みの<code>a</code>に何度も「代入」を行なっていますが、 これはプログラミングでは一般に「破壊的代入」と呼ばれる操作を行なっています。 何が「破壊的」なのかと言うと、代入の前後で<code>a</code>の中身が変わってしまっています。 もし、プログラムの中のどこかあちらこちらで、 この<code>a</code>の中に入れてある「もの」を使っていたとしたら、 それらは<code>a</code>が「変数」であるからプログラムの実行中のある時とまた別のある時とでは 中身が変わってしまう可能性がある事にしっかりと注意して扱う必要があります。 「そんなの当然じゃない？だって変数ですもの・ｘ・；」、 世の中には「破壊的代入」を言語仕様に持たない 「純粋」なプログラミング言語もあるんですよ！ ちなみに<code>var a = 1</code>は「破壊的代入」でしょうか？考えてみて下さい^^
+</div>
+
+<h2 id="関数も使えたならもうプログラムらしいものも作れるね">1.4.関数も使えたなら、もうプログラムらしいものも作れるね</h2>
+<p>さて、それでは流れ的に他にももう１つ、 プログラミングの基本部品である<strong>「関数」</strong>を試してみようか:</p>
 <pre><code>&gt; function(x){ return x + 1; }(0)
-1
-&gt; function(x){ return x + 1; }
-[Function]
-
-
-&gt; var f = function(a){ return a + 1;}
+1</code></pre>
+<p>一応これで「関数」を定義して、 それと（ほぼ）同時にその「関数」に「パラメーター」を与えて「評価」させているよ。 実際のところ、「関数」の定義だけなら次の部分だけで出来ているんだ。</p>
+<pre><code>&gt; function(x){ return x + 1; }
+[Function]</code></pre>
+<p>「これを評価したら<code>[Function]</code>だったよ！」とNode.jsのインタープリターがその評価結果を教えてくれたね。</p>
+<p>さて、ここで問題が１つ。 「関数」はプログラムの一部を部品として小分けに作って置いて、 それを必要な時に必要なところで必要なだけ呼び付けて使う為の機能… なんだけど、これじゃ使う度に関数を作らなくちゃならなくて、 なんだか妙な気もするよね？</p>
+<p>そこで次の様にして定義した「関数」は、普通は「変数」に入れて置いて、 それで必要に応じて使うんだ:</p>
+<pre><code>&gt; var f = function(a){ return a + 1;}
 undefined
 &gt; f
 [Function]
 &gt; f(3)
 4</code></pre>
-<p>Don’t worry an “undefined”, you can use the function useful and functionaly now. :)</p>
-<p>Congratulations! you got the master of <strong>function</strong>, maybe. :) So, maybe. :)</p>
-<p>The finally, write a source code to a file, and run the first your JavaScript program. Try, write a source code with text-editor as you like and save with “.js” file-extension.</p>
+<p>んー、ここでも<code>undefined</code>の心配は例によってまだ必要無いよ！ 実際に、君は「関数」を定義して、それを変数に放り込んで置いて、 それからその放り込んで置いた<strong>「定義しておいた関数ってもの」</strong>を呼び付ける事が出来ているしね。</p>
+<p>JavaScriptでは、電卓として遊んだ「数値ってもの」も「関数ってもの」も、 定義して「もの」になってしまえば「変数」に入れられるし、 定義して存在さえしていればその場で「評価」して使う事もできるんだ。</p>
+<div class="note">
+Note: これは関数型言語というプログラミング言語の特徴を強く醸し出している部分。 関数型言語は文字通り関数をその言語の世界の中心として位置付けて扱える言語。 JavaScriptの他にはHaskell、F#、OCaml、Schemeなどがこの言語の仲間たちです。
+</div>
+
+<p>ちなみに、<code>function</code>はこれから「関数」だよって言語組み込みのキーワード、 それに続く(a)は呼び付ける時には １つのパラメーター（関数に「コレ」やって！と頼む時の「コレ」）を 受け取ってそれを関数の中ではaという名前の変数として扱い、 関数の本体（＝中身、やる内容）は<code>{</code>と<code>}</code>に囲んだ部分。</p>
+<p>今回は関数の本体として、<code>return a + 1;</code>と１つだけの 「ステートメント」（＝文、プログラムの小さな１つの単位）を定義しているね。 <code>return a + 1;</code>は<code>a + 1</code>をこの関数の評価結果として定義して呼び出し元に処理を戻すステートメントだよ。</p>
+<p>ちなみに、returnステートメントの最後にくっつけた<code>;</code>は、 「ステートメントはここまでですよ」と言う印で、 プログラムが複数のステートメントを伴う場合の区切り記号としての言語組み込みのキーワードなんだ。 プログラムの内容がたった１つのステートメントで終わるって事は殆ど無いから、 これからすっかりお世話になって、付け忘れると処理系が上手くステートメントの区切りを解釈できずに、 プログラムが「バグ」ってしまう事になるから気をつけてね・ｗ・；</p>
+<div class="note">
+Note: あ、言うのが遅れたけど、JavaScriptとJavaは冗談抜きに親戚でも何でもないんだ。 言語としての特徴付けすらまるで別ものだから、くれぐれも名前が似てるからって 頭の中で混ざらない様に十分に注意して学習を進めて下さいね・ｘ・；
+</div>
+
+<p>おめでとう！！これで君は<strong>「関数」</strong>もマスターできた・・・ね^^ たぶんだけどね^^</p>
+<h2 id="プログラムをファイルに保存して実行してみよう">1.5.プログラムをファイルに保存して実行してみよう</h2>
+<p>さて、最後に、プログラムをインタープリターでちまちま実行するんじゃなく、 テキストエディターでごりごり書いて、それをファイルに保存したものを実行する方法を紹介するよ！</p>
+<p>試しに、ソースコードをお気に入りのテキストエディターで書いて、 それからそれを“.js”って拡張子を付けて保存しよう:</p>
 <p>[your-source.js]</p>
 <pre><code>var n = 0;
-var f = function(){ console.log(&quot;Hello, JavaScript! &quot; ++ ++n); }
+var f = function(){ console.log(&quot;Hello, JavaScript! &quot; ++ ++n); };
 f();
 f(); f();
 f(); f(); f();</code></pre>
-<p>And, run on your terminal with the <code>node</code> command.</p>
+<p>さっきまではインタープリターを使っていたから、 「ここでこの内容を画面に出して！」とプログラムを書かなくても、 いちいち入力した内容全体を「評価」した結果を自動的に表示してくれていたんだけど、 通常プログラムがそんな挙動をしていたら画面が溢れかえってしまうし不必要な処理で重たくなっちゃうよね。 そこで、通常は必要な時だけ「ここでこの内容を画面に出して！」とプログラムするんだ。</p>
+<p><code>console.log</code>というのはNode.js処理系組み込みの関数で、 パラメーターとして渡された「もの」を画面に表示してくれるよ。</p>
+<div class="note">
+Note: 「画面」は実際の所は「標準出力」（stdout）と言った方が正しい。 通常、計算機には標準出力、標準エラー出力が用意されていて、 プログラマーは必要に応じてこれらへ何かを出力する事ができる様になっている。
+</div>
+
+<div class="note">
+Note: さっきから「もの」という表現が登場しているが、 これはプログラミングの専門用語としても「オブジェクト」であり、つまるところ「もの」です。 プログラムはソースコードに書いた事がそのまま実行される訳ですが、 その実行はプログラミングの初学者がソースコードに対して直感的に思うよりも ずっと細かい事を忘れてはいけません。 例えば、<code>a=1+1</code>で<code>a</code>に代入されている「もの」はなんでしょう？この感覚を忘れないで下さいね。
+</div>
+
+<p>さて、ファイルができたなら端末で<code>node</code>コマンドに次の様にこのファイルを指定して実行させてみよう:</p>
 <pre><code>% node your-source.js
 Hello, JavaScript! 1
 Hello, JavaScript! 2
@@ -128,30 +194,27 @@ Hello, JavaScript! 3
 Hello, JavaScript! 4
 Hello, JavaScript! 5
 Hello, JavaScript! 6</code></pre>
+<p>お疲れ様でした！</p>
+<p>これでJavaScriptのプログラムを作れる様になったね！</p>
+<p>…まだ変数と関数しか使えないって？ちらっと言ったかもしれないけれど、 JavaScriptは「関数型言語」でもあるんだよ。関数と変数が使えたら、 大抵のことはできちゃうよ！…それだけだと、ちょっとコツを知らないと大変かも知れないけどね。</p>
 <div class="note">
-
-<p>Note: In Windows, press <code>Win+R</code> and invoke the command <code>cmd</code> to run the cmd.exe . if you run the Node.js interpreter directory then you invoke the command <code>node</code> with the prompt.</p>
+Note: もしも、普段Windowsを何気なく使っていて、 この講座で初めて<code>cmd</code>を使ったとしたら少々困ってしまっているかもしれない。 「<code>cmd</code>は動かせたみたいだけど、これはなに？」、或いは「ここはどこ？」とか。 念の為、以下にWindowsの<code>cmd</code>を動かしてから、 <code>node</code>に<code>your-source.js</code>を実行するまでの詳説を [1.A.3.Windowsとcmdでの実行例][#1.A.3.]に付けるので参考に。
 </div>
 
+<h2 id="a.付録">1.A.付録</h2>
+<p>授業の後で学生さんたちから届いていたメッセージに答えるよ！</p>
+<h3 id="a.1.についてもう一度">1.A.1.○○についてもう一度！</h3>
+<p>このページを見て頑張ってね！</p>
+<p>（※註、このページは授業の後に公開したものです。）</p>
+<h3 id="a.2.お勧めのテキストエディタを教えて下さい">1.A.2.お勧めのテキストエディタを教えて下さい</h3>
+<p>幾つかのお手軽で便利っぽくて軽量なテキストエディターたちを紹介しよう！</p>
+<div class="note">
+Note: 但し私は Mac OS X の実機を所有していないので、 それについては Twitter や Facebook で教えて貰った情報を元に スクリーンショットや紹介を読んで判断しています。
+</div>
 
-<h3 id="1-misc.">
-#1-misc.
-</h3>
-
-<p>I got some messages after the lecture. My answers are here:</p>
-<h4 id="1-misc.-once_more">
-tell me once more
-</h4>
-
-<p>I created this page. You can check and study again with it. Enjoy your learning! :)</p>
-<h4 id="1-misc.-text_editor">
-tell me a text-editor
-</h4>
-
-<p>There are usefull, simple and lightweight text-editors:</p>
 <div class="recommend">
 
-<p>(Recommend)</p>
+<p>(推奨: 簡単で便利で軽い、みたいな)</p>
 <div class="inner-li-to-tile">
 
 <ul>
@@ -182,8 +245,7 @@ tell me a text-editor
 
 <div class="optional">
 
-<p>(Optional)</p>
-<p>For professional:</p>
+<p>(もし使いたければ: プロの道具)</p>
 <ul>
 <li><a href="http://www.vim.org/">Vim</a> for the Linux and the UNIX
 <ul>
@@ -195,41 +257,16 @@ tell me a text-editor
 <li><a href="https://github.com/Shougo/neocomplcache">neocomplcache</a></li>
 </ul></li>
 </ul>
-<p>And, there are IDEs:</p>
+<p>(ついでなので一応: JavaScriptに対応したIDEもあるよ)</p>
 <ul>
 <li><a href="http://www.netbeans.org/">NetBeans</a> (<a href="http://ja.netbeans.org/">-&gt;ja</a>)</li>
 <li><a href="http://www.eclipse.org/">Eclipse</a> (<a href="http://mergedoc.sourceforge.jp/">-&gt;ja</a>)</li>
+<li><a href="http://www.microsoft.com/japan/msdn/vstudio/express/">Visual WebDevelopper</a></li>
 </ul>
 </div>
 
-<h2 id="2">
-#2 preparing git with how many rabbits pairs
-</h2>
-
-<p>There is one problem here:</p>
-<blockquote>
-<ol style="list-style-type: decimal">
-<li>A newly born pair of rabbits, one male, one female, are put in a field.</li>
-<li>Rabbits are able to mate at the age of one month so that at the end of its second month a female can produce another pair of rabbits.</li>
-<li>Rabbits never die and a mating pair always produces one new pair (one male, one female) every month from the second month on.</li>
-<li>How many pairs will there be in one year?</li>
-</ol>
-</blockquote>
-<p>Reference: <a href="http://en.wikipedia.org/wiki/Fibonacci_number#Origins">http://en.wikipedia.org/wiki/Fibonacci_number#Origins</a></p>
-<p>Today, we try the problem use the JavaScript with social developing on GitHub!</p>
-<div class="note">
-Note: Coming soon! :)
-</div>
-
-<!--h3 id="2-misc.">#2-misc.</h3-->
-
-<!--
-<h2 id="#N">#N </h2>
-<h3 id="#N-misc.">#N-misc.</h3>
--->
-
-
-
+<h3 id="a.3.windowsとcmdでの実行例">1.A.3.Windowsとcmdでの実行例</h3>
+<p><img src="images/win-cmd-node-1.png" alt="1.A.3.-1"></img> <img src="images/win-cmd-node-2.png" alt="1.A.3.-2"></img> <img src="images/win-cmd-node-3.png" alt="1.A.3.-3"></img> <img src="images/win-cmd-node-4.png" alt="1.A.3.-4"></img> <img src="images/win-cmd-node-5.png" alt="1.A.3.-5"></img> <img src="images/win-cmd-node-6.png" alt="1.A.3.-6"></img> <img src="images/win-cmd-node-7.png" alt="1.A.3.-7"></img></p>
 </article>
 
 <hr>

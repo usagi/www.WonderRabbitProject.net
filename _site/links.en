@@ -5,6 +5,9 @@
 <link rel="stylesheet" type="text/css" href="./css/default.css">
 <link rel="stylesheet" type="text/css" href="./css/syntax.css">
 
+<script type="text/javascript" src="http://site.decomoji.jp/js/Qvww6.js" charset="utf-8"></script>
+<script type="text/javascript">try{DecoMoji.load()}catch(e){}</script>
+
 <title>links - Wonder Rabbit Project</title>
 
 <header>
@@ -17,26 +20,27 @@
     <hr>
     <ul>
       <li>
-        <a href="./main.html">/main</a>
+        <a href="./main">/main</a>
         <ul>
-          <li><a href="./about.html">about</a>
+          <li><a href="./about">about</a>
+          <li><a href="./links">links</a>
         </ul>
       <li>
-        <a href="./lecture/main.html">/lecture/</a>
+        <a href="./Lectures/main">/Lectures/</a>
         <ul>
-          <li>
-            <a href="./lecture/Git/main.html">Git</a>
+          <!--li>
+            <a href="/Lecture/Git/main">Git</a>
             <ul>
               <li>
-                <a href="./lecture/Git/main.html#1">#1</a>
-                <a href="./lecture/Git/main.html#2">#2</a>
-            </ul>
+                <a href="/Lecture/Git/0001/main">1</a>
+                <a href="/Lecture/Git/0002/main">2</a>
+            </ul-->
           <li>
-            <a href="./lecture/JavaScript/main.html">JavaScript</a>
+            <a href="./Lecture/JavaScript/main.html">JavaScript</a>
             <ul>
               <li>
-                <a href="./lecture/JavaScript/main.html#1">#1</a>
-                <a href="./lecture/JavaScript/main.html#2">#2</a>
+                <a href="./Lecture/JavaScript/0001/main">1</a>
+                <a href="./Lecture/JavaScript/0002/main">2</a>
             </ul>
         </ul>
     </ul>

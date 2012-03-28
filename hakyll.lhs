@@ -17,12 +17,24 @@ main = hakyllWith conf $ do
   match "favicon.ico" $ do
     route   idRoute
     compile copyFileCompiler
-  
-  match "images/" $ do
+    
+  match "fonts/*.woff" $ do
     route   idRoute
     compile copyFileCompiler
   
-  match "css/*.css" $ do
+  match "**.jpeg" $ do
+    route   idRoute
+    compile copyFileCompiler
+  
+  match "**.png" $ do
+    route   idRoute
+    compile copyFileCompiler
+  
+  match "**.svg" $ do
+    route   idRoute
+    compile copyFileCompiler
+  
+  match "**.css" $ do
     route   idRoute
     compile compressCssCompiler
     
@@ -43,7 +55,10 @@ main = hakyllWith conf $ do
 
   match "**.markdown" $ do
     route   $ setExtension ""
-    compile $ pageCompiler
+    compile $ pageCompilerWithPandoc
+        defaultHakyllParserState
+        defaultHakyllWriterOptions
+        id
       >>> applyTemplateCompiler "templates/default.html"
       >>> relativizeUrlsCompiler
 
