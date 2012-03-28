@@ -2,7 +2,7 @@
 title: Lectures
 --
 
-There are some lectures write for a student or you if need.
+幾つかの講座について資料を公開します。もし必要や興味があればどうぞ。
 
 <!--*   C++ (still thinking about a content)-->
 <!--*   XNA/C# (still thinking about a content)-->
@@ -13,9 +13,9 @@ There are some lectures write for a student or you if need.
     * [#2 social development! on GitHub][git#2]
 -->
 
-* [JavaScript][js] (now writing!)
-    * [#1 play the javascript][js#1]
-    * [#2 preparing git][js#2]
+* [JavaScript][js] （連載執筆中！）
+    * [1.JavaScriptで楽しみましょう][js-0001]
+<!--    * [#2 preparing git][js#2]-->
 
 <!--*   Linux (still thinking about a content)-->
 
@@ -27,8 +27,8 @@ There are some lectures write for a student or you if need.
 [git#2]:  Git/main.html#2
 
 [js]:     JavaScript/main.html   "javascript - Lectures"
-[js#1]:   JavaScript/main.html#1
-[js#2]:   JavaScript/main.html#2
+[js-0001]:   JavaScript/main.html
+[js-0002]:   JavaScript/main.html
 
 [Linux]:  Linux/        "Linux - Lectures"
 

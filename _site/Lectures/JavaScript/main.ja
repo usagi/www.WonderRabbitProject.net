@@ -2,13 +2,13 @@
 
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Schoolbell|Ubuntu+Mono:400">
-<link rel="stylesheet" type="text/css" href="../css/default.css">
-<link rel="stylesheet" type="text/css" href="../css/syntax.css">
+<link rel="stylesheet" type="text/css" href="../../css/default.css">
+<link rel="stylesheet" type="text/css" href="../../css/syntax.css">
 
 <script type="text/javascript" src="http://site.decomoji.jp/js/Qvww6.js" charset="utf-8"></script>
 <script type="text/javascript">try{DecoMoji.load()}catch(e){}</script>
 
-<title>Lectures - Wonder Rabbit Project</title>
+<title>JavaScript - Lectures - Wonder Rabbit Project</title>
 
 <header>
   
@@ -20,19 +20,19 @@
     <hr>
     <ul>
       <li>
-        <a href="../main">/main</a>
+        <a href="../../main">/main</a>
         <ul>
-          <li><a href="../about">about</a>
-          <li><a href="../links">links</a>
+          <li><a href="../../about">about</a>
+          <li><a href="../../links">links</a>
         </ul>
       <li>
-        <a href="../Lectures/main">/Lectures/</a>
+        <a href="../../Lectures/main">/Lectures/</a>
         <ul>
           <li>
-            <a href="../Lecture/JavaScript/main.html">JavaScript</a>
+            <a href="../../Lecture/JavaScript/main.html">JavaScript</a>
             <ul>
               <li>
-                <a href="../Lecture/JavaScript/0001/main">1</a>
+                <a href="../../Lecture/JavaScript/0001/main">1</a>
                 <!--a href="/Lecture/JavaScript/0002/main">2</a-->
             </ul>
         </ul>
@@ -40,41 +40,28 @@
   </nav>
 
 <article>
-  <h1>Lectures</h1>
-  <p>幾つかの講座について資料を公開します。もし必要や興味があればどうぞ。</p>
-<!--*   C++ (still thinking about a content)-->
-<!--*   XNA/C# (still thinking about a content)-->
-
-<!--
-* [Git][git] (now writing!)
-    * [#1 install and study what's Git][git#1]
-    * [#2 social development! on GitHub][git#2]
--->
-
+  <h1>JavaScript - Lectures</h1>
+  <p>これは<em>「うさぎ先生」</em>が実際に、とある学校で授業で教えている事を元に、 またその授業用の教材の１つとして使っているものです・ｘ・</p>
+<p>もし、興味があれば覗いてみて下さい。 ちなみにこのコンテンツのライセンスもCC-BYです。</p>
+<nav>
+<p>目次と内容</p>
 <ul>
-<li><a href="JavaScript/main.html" title="javascript - Lectures">JavaScript</a> （連載執筆中！）
+<li><a href="0001/">1.JavaScriptで楽しみましょう</a>
 <ul>
-<li><a href="JavaScript/main.html">1.JavaScriptで楽しみましょう</a> <!--    * [#2 preparing git][js#2]--></li>
+<li><a href="0001/#はじめの環境整備">1.1.はじめの環境整備</a></li>
+<li><a href="0001/#電卓とJavaScriptの式と関数の考え方">1.2.電卓とJavaScriptの式と関数の考え方</a></li>
+<li><a href="0001/#変数を使って少しプログラムらしい事をしてみる">1.3.変数を使って少しプログラムらしい事をしてみる</a></li>
+<li><a href="0001/#関数も使えたなら、もうプログラムらしいものも作れるね">1.4.関数も使えたなら、もうプログラムらしいものも作れるね</a></li>
+<li><a href="0001/#プログラムをファイルに保存して実行してみよう">1.5.プログラムをファイルに保存して実行してみよう</a></li>
+<li><a href="0001/#a.付録">1.A.付録</a>
+<ul>
+<li>[1.A.1.○○についてもう一度！0001/#a.1.○○についてもう一度)</li>
+<li><a href="0001/#a.2.お勧めのテキストエディタを教えて下さい">1.A.2.お勧めのテキストエディタを教えて下さい</a></li>
+<li><a href="0001/#a.3.Windowsとcmdでの実行例">1.A.3.Windowsとcmdでの実行例</a></li>
+</ul></li>
 </ul></li>
 </ul>
-<!--*   Linux (still thinking about a content)-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</nav>
 </article>
 
 <hr>
