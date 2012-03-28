@@ -144,7 +144,7 @@ header > nav > ul li{
 }
 
 header > nav{
-  opacity:0.75;
+  opacity:0.65;
   box-shadow: 3px 3px 5px hsla( 0, 0%, 90%, 0.75);
   background-color: hsla( 330, 100%, 98%, 1.00 );
   border: 0.33mm dotted hsla( 330, 90%, 90%, 1.00 );
@@ -152,7 +152,8 @@ header > nav{
   padding: 2mm;
   width: 40mm;
   position: fixed;
-  right:204mm;
+  left: 0mm;
+  top: 0mm;
 }
 
 header > nav:hover{
