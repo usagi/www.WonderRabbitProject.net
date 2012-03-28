@@ -248,3 +248,11 @@ pre.datetime:hover{
   opacity:1;
 }
 
+sub {
+  vertical-align: sub;
+}
+
+sup {
+  vertical-align: super;
+}
+

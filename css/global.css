@@ -1,3 +1,10 @@
+/*
+@font-face {
+  font-family: kiloji;
+  src: url(/fonts/kiloji.woff) format('woff');
+}
+*/
+
 html * {
   text-autospace: ideograph-numeric, ideograph-alphai;
   line-height: 1.33em;
