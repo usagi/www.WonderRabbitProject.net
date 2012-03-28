@@ -47,12 +47,12 @@ title: links
 ## Public FTP Service on Wonder Rabbit Project
 
 - [ftp.WonderRabbitProject.net][ftp]
--- [Linux][ftp/linux]
---- [Arch Linux repository clone][ftp/archlinux] ([README][ftp/archlinux.README])
---- [Linux ISOs][ftp/linux-iso]
--- [Development][ftp/development]
---- [GCC repository clone][ftp/gcc] ([README][ftp/gcc.README])
---- [Boost C++ Library repository clone][ftp/boost] ([README][ftp/boost.README])
+    - [Linux][ftp/linux]
+        - [Arch Linux repository clone][ftp/archlinux] ([README][ftp/archlinux.README])
+        - [Linux ISOs][ftp/linux-iso]
+    - [Development][ftp/development]
+        - [GCC repository clone][ftp/gcc] ([README][ftp/gcc.README])
+        - [Boost C++ Library repository clone][ftp/boost] ([README][ftp/boost.README])
 
 [ftp]:                  ftp://ftp.WonderRabbitProject.net/
 [ftp/linux]:            ftp://ftp.wonderRabbitProject.net/pub/Linux/
