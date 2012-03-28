@@ -29,10 +29,10 @@
         <a href="../../Lectures/main">/Lectures/</a>
         <ul>
           <li>
-            <a href="../../Lecture/JavaScript/main.html">JavaScript</a>
+            <a href="../../Lectures/JavaScript/main.html">JavaScript</a>
             <ul>
               <li>
-                <a href="../../Lecture/JavaScript/0001/main">1</a>
+                <a href="../../Lectures/JavaScript/0001/main">1</a>
                 <!--a href="/Lecture/JavaScript/0002/main">2</a-->
             </ul>
         </ul>
