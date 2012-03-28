@@ -1,5 +1,5 @@
 --
-title=404 Not Found Error
+title:404 Not Found Error
 --
 
 ----
