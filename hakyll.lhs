@@ -9,7 +9,7 @@ import Hakyll
 
 conf :: HakyllConfiguration
 conf = defaultHakyllConfiguration { deployCommand = a }
-  where a = "git commit -am \"hakyll deploy\" && git push"
+  where a = "git add . && git commit -m \"hakyll deploy\" && git push"
 
 main :: IO ()
 main = hakyllWith conf $ do
