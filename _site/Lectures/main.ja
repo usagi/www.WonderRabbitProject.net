@@ -14,37 +14,30 @@
   
   <h1>Wonder Rabbit Project</h1>
   
-  <nav>
+  <!--nav>
     <p>
       There are navigation as a link to the content page on this website:
     <hr>
     <ul>
       <li>
-        <a href="../main">/main</a>
+        <a href="/main">/main</a>
         <ul>
-          <li><a href="../about">about</a>
-          <li><a href="../links">links</a>
+          <li><a href="/about">about</a>
+          <li><a href="/links">links</a>
         </ul>
       <li>
-        <a href="../Lectures/main">/Lectures/</a>
+        <a href="/Lectures/main">/Lectures/</a>
         <ul>
-          <!--li>
-            <a href="/Lecture/Git/main">Git</a>
-            <ul>
-              <li>
-                <a href="/Lecture/Git/0001/main">1</a>
-                <a href="/Lecture/Git/0002/main">2</a>
-            </ul-->
           <li>
-            <a href="../Lecture/JavaScript/main.html">JavaScript</a>
+            <a href="/Lecture/JavaScript/main.html">JavaScript</a>
             <ul>
               <li>
-                <a href="../Lecture/JavaScript/0001/main">1</a>
-                <a href="../Lecture/JavaScript/0002/main">2</a>
+                <a href="/Lecture/JavaScript/0001/main">1</a>
+                <a href="/Lecture/JavaScript/0002/main">2</a>
             </ul>
         </ul>
     </ul>
-  </nav>
+  </nav-->
 
 <article>
   <h1>Lectures</h1>

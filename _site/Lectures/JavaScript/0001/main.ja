@@ -14,53 +14,46 @@
   
   <h1>Wonder Rabbit Project</h1>
   
-  <nav>
+  <!--nav>
     <p>
       There are navigation as a link to the content page on this website:
     <hr>
     <ul>
       <li>
-        <a href="../../../main">/main</a>
+        <a href="/main">/main</a>
         <ul>
-          <li><a href="../../../about">about</a>
-          <li><a href="../../../links">links</a>
+          <li><a href="/about">about</a>
+          <li><a href="/links">links</a>
         </ul>
       <li>
-        <a href="../../../Lectures/main">/Lectures/</a>
+        <a href="/Lectures/main">/Lectures/</a>
         <ul>
-          <!--li>
-            <a href="/Lecture/Git/main">Git</a>
-            <ul>
-              <li>
-                <a href="/Lecture/Git/0001/main">1</a>
-                <a href="/Lecture/Git/0002/main">2</a>
-            </ul-->
           <li>
-            <a href="../../../Lecture/JavaScript/main.html">JavaScript</a>
+            <a href="/Lecture/JavaScript/main.html">JavaScript</a>
             <ul>
               <li>
-                <a href="../../../Lecture/JavaScript/0001/main">1</a>
-                <a href="../../../Lecture/JavaScript/0002/main">2</a>
+                <a href="/Lecture/JavaScript/0001/main">1</a>
+                <a href="/Lecture/JavaScript/0002/main">2</a>
             </ul>
         </ul>
     </ul>
-  </nav>
+  </nav-->
 
 <article>
   <h1>1. JavaScriptで楽しみましょう - JavaScript - Lectures</h1>
   <nav>
 <h5 id="内容">内容</h5>
 <ul>
-<li><a href="#1.1.">1.1.はじめの環境整備</a></li>
-<li><a href="#1.2.">1.2.電卓とJavaScriptの式と関数の考え方</a></li>
-<li><a href="#1.3.">1.3.変数を使って少しプログラムらしい事をしてみる</a></li>
-<li><a href="#1.4.">1.4.関数も使えたなら、もうプログラムらしいものも作れるね</a></li>
-<li><a href="#1.5.">1.5.プログラムをファイルに保存して実行してみよう</a></li>
-<li><a href="#1.A.">1.A.付録</a>
+<li><a href="#はじめの環境整備">1.1.はじめの環境整備</a></li>
+<li><a href="#電卓とJavaScriptの式と関数の考え方">1.2.電卓とJavaScriptの式と関数の考え方</a></li>
+<li><a href="#変数を使って少しプログラムらしい事をしてみる">1.3.変数を使って少しプログラムらしい事をしてみる</a></li>
+<li><a href="#関数も使えたなら、もうプログラムらしいものも作れるね">1.4.関数も使えたなら、もうプログラムらしいものも作れるね</a></li>
+<li><a href="#プログラムをファイルに保存して実行してみよう">1.5.プログラムをファイルに保存して実行してみよう</a></li>
+<li><a href="#a.付録">1.A.付録</a>
 <ul>
-<li><a href="#1.A.1.">1.A.1.○○についてもう一度！</a></li>
-<li><a href="#1.A.2.">1.A.2.お勧めのテキストエディタを教えて下さい</a></li>
-<li><a href="#1.A.3">1.A.3.Windowsとcmdでの実行例</a></li>
+<li><a href="#a.1.○○についてもう一度！">1.A.1.○○についてもう一度！</a></li>
+<li><a href="#a.2.お勧めのテキストエディタを教えて下さい">1.A.2.お勧めのテキストエディタを教えて下さい</a></li>
+<li><a href="#a.3.Windowsとcmdでの実行例">1.A.3.Windowsとcmdでの実行例</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -198,7 +191,7 @@ Hello, JavaScript! 6</code></pre>
 <p>これでJavaScriptのプログラムを作れる様になったね！</p>
 <p>…まだ変数と関数しか使えないって？ちらっと言ったかもしれないけれど、 JavaScriptは「関数型言語」でもあるんだよ。関数と変数が使えたら、 大抵のことはできちゃうよ！…それだけだと、ちょっとコツを知らないと大変かも知れないけどね。</p>
 <div class="note">
-Note: もしも、普段Windowsを何気なく使っていて、 この講座で初めて<code>cmd</code>を使ったとしたら少々困ってしまっているかもしれない。 「<code>cmd</code>は動かせたみたいだけど、これはなに？」、或いは「ここはどこ？」とか。 念の為、以下にWindowsの<code>cmd</code>を動かしてから、 <code>node</code>に<code>your-source.js</code>を実行するまでの詳説を [1.A.3.Windowsとcmdでの実行例][#1.A.3.]に付けるので参考に。
+Note: もしも、普段Windowsを何気なく使っていて、 この講座で初めて<code>cmd</code>を使ったとしたら少々困ってしまっているかもしれない。 「<code>cmd</code>は動かせたみたいだけど、これはなに？」、或いは「ここはどこ？」とか。 念の為、以下にWindowsの<code>cmd</code>を動かしてから、 <code>node</code>に<code>your-source.js</code>を実行するまでの詳説を <a href="#a.3.Windowsとcmdでの実行例">1.A.3.Windowsとcmdでの実行例</a>に付けるので参考に。
 </div>
 
 <h2 id="a.付録">1.A.付録</h2>
@@ -208,10 +201,6 @@ Note: もしも、普段Windowsを何気なく使っていて、 この講座で
 <p>（※註、このページは授業の後に公開したものです。）</p>
 <h3 id="a.2.お勧めのテキストエディタを教えて下さい">1.A.2.お勧めのテキストエディタを教えて下さい</h3>
 <p>幾つかのお手軽で便利っぽくて軽量なテキストエディターたちを紹介しよう！</p>
-<div class="note">
-Note: 但し私は Mac OS X の実機を所有していないので、 それについては Twitter や Facebook で教えて貰った情報を元に スクリーンショットや紹介を読んで判断しています。
-</div>
-
 <div class="recommend">
 
 <p>(推奨: 簡単で便利で軽い、みたいな)</p>
@@ -263,6 +252,10 @@ Note: 但し私は Mac OS X の実機を所有していないので、 それに
 <li><a href="http://www.eclipse.org/">Eclipse</a> (<a href="http://mergedoc.sourceforge.jp/">-&gt;ja</a>)</li>
 <li><a href="http://www.microsoft.com/japan/msdn/vstudio/express/">Visual WebDevelopper</a></li>
 </ul>
+</div>
+
+<div class="note">
+Note: 但し私は Mac OS X の実機を所有していないので、 それについては Twitter や Facebook で教えて貰った情報を元に スクリーンショットや紹介を読んで判断しています。
 </div>
 
 <h3 id="a.3.windowsとcmdでの実行例">1.A.3.Windowsとcmdでの実行例</h3>
