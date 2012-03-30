@@ -53,13 +53,32 @@ main = hakyllWith conf $ do
     compile $ pageCompiler
       >>> applyTemplateCompiler "templates/status.html"
 
+  match "*.markdown" $ do
+    route   $ setExtension ""
+    compile $ pageCompilerWithPandoc
+        defaultHakyllParserState
+        defaultHakyllWriterOptions
+        id
+      >>> applyTemplateCompiler "templates/article.html"
+      >>> applyTemplateCompiler "templates/global_footer.html"
+      >>> applyTemplateCompiler "templates/global_header.html"
+      >>> applyTemplateCompiler "templates/global_head_title.html"
+      >>> applyTemplateCompiler "templates/global_head_css.html"
+      >>> applyTemplateCompiler "templates/global_head.html"
+      >>> relativizeUrlsCompiler
+  
   match "**.markdown" $ do
     route   $ setExtension ""
     compile $ pageCompilerWithPandoc
         defaultHakyllParserState
         defaultHakyllWriterOptions
         id
-      >>> applyTemplateCompiler "templates/default.html"
+      >>> applyTemplateCompiler "templates/article_has_parent.html"
+      >>> applyTemplateCompiler "templates/global_footer.html"
+      >>> applyTemplateCompiler "templates/global_header.html"
+      >>> applyTemplateCompiler "templates/global_head_title_has_parent.html"
+      >>> applyTemplateCompiler "templates/global_head_css.html"
+      >>> applyTemplateCompiler "templates/global_head.html"
       >>> relativizeUrlsCompiler
 
 {--

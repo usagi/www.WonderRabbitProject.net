@@ -1,0 +1,8 @@
+header > nav{
+  box-shadow: 3px 3px 5px hsla( 0, 0%, 90%, 0.75);
+  width: 40mm;
+  position: fixed;
+  left: 0mm;
+  top: 0mm;
+}
+

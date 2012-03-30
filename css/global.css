@@ -18,3 +18,14 @@ html * {
   -webkit-transition-duration: 0.20s;
 }
 
+a {
+  color: hsla(240, 100%, 68%, 1.00);
+  border: 2px solid hsla(0, 0%, 90%, 0.24);
+  border-radius: 6mm;
+  background-color: hsla(0, 0%, 95%, 0.70);
+}
+
+a:hover {
+  background-color: hsla(0, 0%, 85%, 0.70);
+}
+
