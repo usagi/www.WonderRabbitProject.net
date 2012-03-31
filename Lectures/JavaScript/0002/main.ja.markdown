@@ -1,11 +1,14 @@
 --
-title:     2. 増える！うさぎペアー問題 - JavaScript - Lectures
+parent:    JavaScript ⇠ Lectures
+title:     2. 増える！うさぎペアー問題
 published: 2012-03-29 07:25
-updated:   2012-03-29 07:25
+modified:  2012-03-29 07:25
 --
 
-<pre class="datetime">Published: $published$
-Updated  : $updated$</pre></p>
+<ul class="datetime">
+  <li class="published"><time pubdate datetime="$published$">$published$</time>
+  <li class="modified"><time datetime="$modified$">$modified$<time/>
+</ul>
 
 <nav>
 

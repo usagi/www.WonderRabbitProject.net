@@ -18,6 +18,17 @@ pre {
   margin: 6mm 0;
 }
 
+*:not(pre) > code {
+  background-color: hsla( 0, 0%, 97.3%, 1.00 );
+  border: 0.33mm solid hsla( 0, 0%, 80.0%, 1.00 );
+  border-radius: 2mm;
+  font-size: 4.8mm;
+  line-height: 5.0mm;
+  overflow: auto;
+  padding: 0;
+  margin: 0;
+}
+
 blockquote {
   background-color: hsla( 60, 100%, 97.3%, 1.00 );
   border: 0.33mm solid hsla( 0, 0%, 80.0%, 1.00 );
@@ -35,16 +46,20 @@ body > header > h1 {
   padding-bottom: 3mm;
 }
 
-ul ul{ margin-left:3mm; }
-li{
-  list-style: none;
+body > header > nav ul {
+  padding-left: 0;
+}
+
+ul, ol { padding-left: 12mm; }
+ol li {
+  list-style: decimal;
   margin-top: 2mm;
   margin-bottom: 2mm;
 }
 
-ol { padding-left: 6mm; }
-ol li {
-  list-style: decimal;
+ul ul{ margin-left:3mm; }
+li{
+  list-style: none;
   margin-top: 2mm;
   margin-bottom: 2mm;
 }
@@ -55,8 +70,8 @@ article {
 
 h1,h2,h3,h4,h5{ margin: 0; padding: 0;}
 
-article > p,
-article > div {
+article p,
+article div {
   margin: 3mm 1mm;
 }
 

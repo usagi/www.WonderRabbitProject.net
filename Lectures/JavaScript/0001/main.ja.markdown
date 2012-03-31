@@ -1,11 +1,14 @@
 --
-title:     1. JavaScriptで楽しみましょう - JavaScript - Lectures
+parent:    JavaScript ⇠ Lectures
+title:     1. JavaScriptで楽しみましょう
 published: 2012-03-28 23:30
-updated:   2012-03-28 23:30
+modified:  2012-03-28 23:30
 --
 
-<pre class="datetime">Published: $published$
-Updated  : $updated$</pre></p>
+<ul class="datetime">
+  <li class="published"><time pubdate datetime="$published$">$published$</time>
+  <li class="modified"><time datetime="$modified$">$modified$<time/>
+</ul>
 
 <nav>
 
