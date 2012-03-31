@@ -1,8 +1,8 @@
 --
 parent:    JavaScript ⇠ Lectures
 title:     3. GitとGitHub（前編）
-published: 2012-03-30T07:25+0900
-modified:  2012-03-30T07:25+0900
+published: 2012-03-31T15:00+0900
+modified:  2012-03-31T15:00+0900
 --
 
 <ul class="datetime">
