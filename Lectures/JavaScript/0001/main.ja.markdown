@@ -309,7 +309,7 @@ Note: もしも、普段Windowsを何気なく使っていて、
 「`cmd`は動かせたみたいだけど、これはなに？」、或いは「ここはどこ？」とか。
 念の為、以下にWindowsの`cmd`を動かしてから、
 `node`に`your-source.js`を実行するまでの詳説を
-[1.A.3.Windowsとcmdでの実行例](#a.3.Windowsとcmdでの実行例)に付けるので参考に。
+[1.A.3.Windowsとcmdでの実行例](#a.3.windowsとcmdでの実行例)に付けるので参考に。
 </div>
 
 ## 1.A.付録
