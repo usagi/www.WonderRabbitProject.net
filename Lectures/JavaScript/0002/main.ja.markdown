@@ -5,10 +5,12 @@ published: 2012-03-29 07:25
 modified:  2012-03-29 07:25
 --
 
+<a target="_blank" href="https://github.com/usagi/www.WonderRabbitProject.net/commits/master/Lectures/JavaScript/0004/main.ja.markdown">
 <ul class="datetime">
   <li class="published"><time pubdate datetime="$published$">$published$</time>
   <li class="modified"><time datetime="$modified$">$modified$<time/>
 </ul>
+</a>
 
 <nav>
 

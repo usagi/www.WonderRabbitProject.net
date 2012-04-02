@@ -59,9 +59,14 @@ ol li {
 
 ul ul{ margin-left:3mm; }
 li{
-  list-style: none;
   margin-top: 2mm;
   margin-bottom: 2mm;
+}
+
+nav li,
+ul.datetime li
+{
+  list-style: none;
 }
 
 article {
