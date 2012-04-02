@@ -2,7 +2,7 @@
 parent:    JavaScript ⇠ Lectures
 title:     3. GitとGitHub（前編）
 published: 2012-03-31T15:00+0900
-modified:  2012-03-31T15:00+0900
+modified:  2012-04-02T16:42+0900
 --
 
 <ul class="datetime">
@@ -53,7 +53,7 @@ GitHubは**（Gitを用いた）ソフトウェア開発を支援する為のウ
 1. 管理しないという管理方法
 1. 必要そうな気がした時に`my-project`を`my-project-1`としてコピーする。
 次に必要そうな気がした時には`my-project-2`、その次は`my-project-3`とかコピーしてバックアップする。
-最新版は`my-project`、他は
+最新版は`my-project`、とかそういう。
 1. ↑の管理方法をファイル単位で行う。
 `main.js`のある時のバックアップは`main-1.js`、またその後のある時には`main-2.js`とか。
 あまり大きな変更をしないファイルは末尾に数字の付いたバックアップファイルが存在しない。
