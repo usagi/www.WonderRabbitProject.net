@@ -2,7 +2,7 @@
 title:     4. GitとGitHub（後編）→ソシテ
 parent:    JavaScript ⇠ Lectures
 published: 2012-04-03 01:00
-modified:  2012-04-03 08:00
+modified:  2012-04-04 00:39
 --
 
 <a target="_blank" href="https://github.com/usagi/www.WonderRabbitProject.net/commits/master/Lectures/JavaScript/0004/main.ja.markdown">
