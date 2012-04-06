@@ -463,9 +463,25 @@ JavaScriptの型システムの講義は最初の１コマと少々を、
 １つのゲームとして面白く演出するシステムを作る」案件があったとしましょう。
 その完成図を描いてみるとこうなります。
 
-- Visual-1 <https://github.com/usagi/Girls/raw/master/design/visual-1.png>
-- Visual-2 <https://github.com/usagi/Girls/raw/master/design/visual-2.png>
-- Visual-3 <https://github.com/usagi/Girls/raw/master/design/visual-3.png>
+<table>
+<tr>
+<td>
+<a href="https://github.com/usagi/Girls/raw/master/design/visual-1.png">
+<img src="https://github.com/usagi/Girls/raw/master/design/visual-1.png" style="float:left;width:65mm">
+</a>
+<td>
+<a href="https://github.com/usagi/Girls/raw/master/design/visual-2.png">
+<img src="https://github.com/usagi/Girls/raw/master/design/visual-2.png" style="float:left;width:65mm">
+</a>
+<td>
+<a href="https://github.com/usagi/Girls/raw/master/design/visual-3.png">
+<img src="https://github.com/usagi/Girls/raw/master/design/visual-3.png" style="float:left;width:65mm">
+</a>
+<tr style="text-align:right;">
+<td>Visual-1
+<td>Visual-2
+<td>Visual-3
+</table>
 
 これはソフトウェアのデザイン（ソースコードの「設計」もデザインですね）
 の一部であるソフトウェアのヴィジュアル（＝見た目）のデザイン資料で「ワイヤーフレーム」と言われるものです。
@@ -510,7 +526,6 @@ Note: 現実社会の実際の案件では、
 1. 案件の要求仕様を整理
 1. 完成の絵を描く
 1. 実現する為に必要となる機能を列挙する
-    1. 案件ボード
 1. 実装を進める
     1. モックアップを作成する
     1. （必要なら）モックアップ用のダミーデータを作成する
