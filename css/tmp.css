@@ -229,13 +229,13 @@ img {
   opacity:1;
 }
 
-p.caption {
+.figure p.caption {
   float:right;
 }
 
-p.caption:after{
+.figure:after{
   display: block;
-  clear: left;
+  clear: right;
   content: "";
 }
 
