@@ -2,7 +2,7 @@
 title:     5. JavaScriptの「本当の」基礎
 parent:    JavaScript ⇠ Lectures
 published: 2012-04-05 08:30
-modified:  2012-04-05 08:30
+modified:  2012-04-06 14:00
 --
 
 <a target="_blank" href="https://github.com/usagi/www.WonderRabbitProject.net/commits/master/Lectures/JavaScript/0005/main.ja.markdown">
@@ -14,18 +14,13 @@ modified:  2012-04-05 08:30
 
 <nav>
 
-##### NOTICE
-
-この記事はまだ半分しか書いていません。
-残り半分は実際の授業の後に、それを元に書き起こす予定です。
-
 ##### 概要
 
 今回から（漸く？）JavaScriptの基礎的な型システムや制御文、
 一般的な処理系の挙動、言語仕様などJavaScriptそのものについての講座となります。
 
 今回はJavaScript言語を知識として学習する上では最も重要な要素となる
-この言語における型システムについて講義します。
+この言語における**型システム**について講義します。
 
 なお、以降は毎回、講座の前半でJavaScriptに関する講義を行い、
 講座の後半はJavaScriptのプロジェクトに実際に取り組む時間とします。
@@ -35,21 +30,21 @@ modified:  2012-04-05 08:30
 ##### 内容
 
 * [5.1.JavaScriptの型システム](#javascriptの型システム)
-* [5.1.1.JavaScriptの型](#javascriptの型)
-* [5.1.2.JavaScriptの型の一覧](#javascriptの方の一覧)
-* [5.1.2.1.Number型](#number型)
-* [5.1.2.2.String型](#string型)
-* [5.1.2.3.Boolean型](#boolean型)
-* [5.1.2.4.Object型](#object型)
-* [5.1.2.4.1.配列リテラル](#配列リテラル)
-* [5.1.2.5.Undefined型とNull型](#undefined型とnull型)
-* [5.1.3.JavaScriptの型変換](#javascriptの型変換)
-* [5.1.3.1.暗黙の型変換](#暗黙の型変換)
-* [5.1.4.JavaScriptの型の分類: 値型と参照型](#javascriptの方の分類値型と参照型)
-* [5.1.4.1.配列リテラル](#配列リテラル)
-* [5.1.4.2.リテラル](#リテラル)
+    * [5.1.1.JavaScriptの型](#javascriptの型)
+    * [5.1.2.JavaScriptの型の一覧](#javascriptの方の一覧)
+        * [5.1.2.1.Number型](#number型)
+        * [5.1.2.2.String型](#string型)
+        * [5.1.2.3.Boolean型](#boolean型)
+        * [5.1.2.4.Object型](#object型)
+            * [5.1.2.4.1.配列リテラル](#配列リテラル)
+        * [5.1.2.5.Undefined型とNull型](#undefined型とnull型)
+    * [5.1.3.JavaScriptの型変換](#javascriptの型変換)
+        * [5.1.3.1.暗黙の型変換](#暗黙の型変換)
+    * [5.1.4.JavaScriptの型の分類: 値型と参照型](#javascriptの方の分類値型と参照型)
+        * [5.1.4.1.配列リテラル](#配列リテラル)
+    * [5.1.5.リテラル](#リテラル)
 * [5.A.付録](#a.付録)
-* [5.A.1.プロジェクトのスタートアップ](#a.1.プロジェクトのスタートアップ)
+    * [5.A.1.プロジェクトのスタートアップ](#a.1.プロジェクトのスタートアップ)
 
 </nav>
 
@@ -413,7 +408,7 @@ JavaScriptの世界Number、String、Booleanは「値型」の型です。Object
     var y = x;
     x.0 = 654
 
-#### 5.1.4.2.リテラル
+#### 5.1.5.リテラル
 
 型システムの終わりに、「リテラル」という言葉についても触れておきましょう。
 プログラムのソースコードに`1234`とか出てきたら、これを「数値リテラル」と呼びますし、
