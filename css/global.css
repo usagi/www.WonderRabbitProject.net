@@ -10,6 +10,7 @@
 }
 
 html * {
+  image-rendering: optimizeQuality;
   text-autospace: ideograph-numeric, ideograph-alphai;
   line-height: 1.33em;
   font-size: 5.0mm;
