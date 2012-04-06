@@ -2,7 +2,7 @@
 title:     5. JavaScriptの「本当の」基礎
 parent:    JavaScript ⇠ Lectures
 published: 2012-04-05 08:30
-modified:  2012-04-06 14:00
+modified:  2012-04-06 14:35
 --
 
 <a target="_blank" href="https://github.com/usagi/www.WonderRabbitProject.net/commits/master/Lectures/JavaScript/0005/main.ja.markdown">
@@ -120,7 +120,7 @@ JavaScriptで配列を定義する為の糖衣構文の様なものですが、
 JavaScriptには次の型しかありません。
 値の例も同時に挙げるので、それがどんな型か考えながら見て下さい。
 
-- Number … 任意精度の整数型
+- Number … 任意精度の数値型
     - 12345
     - 1.41421356
 - String … 文字列型
