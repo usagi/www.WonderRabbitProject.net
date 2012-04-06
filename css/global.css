@@ -1,15 +1,19 @@
-/*
+
 @font-face {
   font-family: kiloji;
   src: url(/fonts/kiloji.woff) format('woff');
 }
-*/
+
+@font-face {
+  font-family: Ricty;
+  src: url(/fonts/Ricty-Regular.woff) format('woff');
+}
 
 html * {
   text-autospace: ideograph-numeric, ideograph-alphai;
   line-height: 1.33em;
   font-size: 5.0mm;
-  font-family: "schoolbell", cursive;
+  font-family: "kiloji", "schoolbell", cursive;
      -moz-transition-property: background,color,opacity,box-shadow;
   -webkit-transition-property: background,color,opacity,box-shadow;
      -moz-transition-timing-function: ease-out;

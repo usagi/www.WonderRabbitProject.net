@@ -4,7 +4,7 @@ body {
 }
 
 code {
-  font-family: "Ubuntu Mono", monospace;
+  font-family: "Ricty", "Ubuntu Mono", monospace;
 }
 
 pre {
@@ -88,11 +88,11 @@ article h5{
   margin: 3mm 0;
 }
 
-article h1::before { content: "➽ " }
-article h2::before { content: "➵ " }
-article h3::before { content: "↣ " }
-article h4::before { content: "→ " }
-article h5::before { content: "⇢ " }
+article h1::before { content: "➽ "; font-family: sans-serif }
+article h2::before { content: "➵ "; font-family: sans-serif }
+article h3::before { content: "↣ "; font-family: sans-serif }
+article h4::before { content: "→"; font-family: sans-serif }
+article h5::before { content: "⇢ "; font-family: sans-serif }
 
 article h1{ font-size: 9mm; }
 article h2{ font-size: 7mm; }
