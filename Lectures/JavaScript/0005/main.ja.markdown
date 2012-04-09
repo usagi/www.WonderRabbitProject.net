@@ -1,14 +1,13 @@
 --
-title:     5. JavaScriptの「本当の」基礎
+title:     5. JavaScriptの「本当の」基礎・型システム
 parent:    JavaScript ⇠ Lectures
 published: 2012-04-05 08:30
-modified:  2012-04-06 16:59
 --
 
 <a target="_blank" href="https://github.com/usagi/www.WonderRabbitProject.net/commits/master/Lectures/JavaScript/0005/main.ja.markdown">
 <ul class="datetime">
   <li class="published"><time pubdate datetime="$published$">$published$</time>
-  <li class="modified"><time datetime="$modified$">$modified$<time/>
+  <li>change log is here
 </ul>
 </a>
 
@@ -61,7 +60,7 @@ modified:  2012-04-06 16:59
 ここから先を読む前に、いつでもすぐに試せる様にNode.jsのインタープリターを起動して措くと良いでしょう。
 
 <div class="note">
-Note: 今回教える内容の一次情報は"[ECMA-262 5th][ecma262]§8 Types"にあります。
+Note: 今回教える内容の一次情報は"[ECMA-262][ECMA-262]§8 Types"にあります。
 余裕があれば是非、言語仕様原文にも目を通して見ると良いでしょう。
 初めて言語仕様書を読むときには全ての事を出てくる順に理解して行くのは難しいと思います。
 読む必要性を感じた節ごとに、徐々に読み込んで行くと良いでしょう。
@@ -602,4 +601,6 @@ Note: 先の「工程」、もしも考える余裕があれば「単体試験�
 
 [gist]:   http://gist.github.com/
 [ideone]: http://www.ideone.com/
+
+[ECMA-262]: http://www.ecma-international.org/publications/standards/Ecma-262.htm
 

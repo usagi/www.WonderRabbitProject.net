@@ -2,13 +2,12 @@
 parent:    JavaScript ⇠ Lectures
 title:     1. JavaScriptで楽しみましょう
 published: 2012-03-28 23:30
-modified:  2012-03-28 23:30
 --
 
 <a target="_blank" href="https://github.com/usagi/www.WonderRabbitProject.net/commits/master/Lectures/JavaScript/0001/main.ja.markdown">
 <ul class="datetime">
   <li class="published"><time pubdate datetime="$published$">$published$</time>
-  <li class="modified"><time datetime="$modified$">$modified$<time/>
+  <li>change log is here
 </ul>
 </a>
 

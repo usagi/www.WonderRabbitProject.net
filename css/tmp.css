@@ -50,14 +50,22 @@ body > header > nav ul {
   padding-left: 0;
 }
 
-ul, ol { padding-left: 12mm; }
+
+ul, ol {
+  padding-left: 12mm;
+}
+
+ul ul, ul ol,
+ol ul, ol ol{
+  padding-left: 6mm;
+}
+
 ol li {
   list-style: decimal;
   margin-top: 2mm;
   margin-bottom: 2mm;
 }
 
-ul ul{ margin-left:3mm; }
 li{
   margin-top: 2mm;
   margin-bottom: 2mm;
@@ -68,6 +76,8 @@ ul.datetime li
 {
   list-style: none;
 }
+
+header nav ul ul{ margin-left:3mm; }
 
 article {
   margin: 4mm 2mm;
