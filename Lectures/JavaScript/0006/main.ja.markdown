@@ -989,8 +989,11 @@ SVG形式に標準対応しアイコンやデザインの制作に重宝する�
 前回の付録でもちらりと紹介した先生が適当に開発してみている"Girls"というシステム。
 こちらのモックアップはCacooで作って居たし、実際に使うアイコンなどはInkScapeで描いている。
 
-![pin](https://github.com/usagi/Girls/blob/master/src/images/pin.png)
-![star](https://github.com/usagi/Girls/blob/master/src/images/star.png)
+![pin](https://github.com/usagi/Girls/raw/master/src/images/pin.png)
+![star](https://github.com/usagi/Girls/raw/master/src/images/star.png)
+
+これらアイコンの元のSVGデータも
+このリポジトリの[design](https://github.com/usagi/Girls/tree/master/design)ディレクトリに同梱している。
 
 ちなみに、Girlsはモックアップにクライアントサイドの実装までは済ませた状態まで出来ていて、
 サンプルを <http://Girls.demo.WonderRabbitProject.net/> にて展示して居ます。
