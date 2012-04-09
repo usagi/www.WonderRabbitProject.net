@@ -971,8 +971,32 @@ JavaScriptのプログラムを真面目に全てプログラマーが意図し�
 基本的には`;`はプログラマーが意図したコードを書いている事を容易に確信出来るよう、
 きちんと付けながら実装する様にした方が良いでしょう。
 
-[prev]: ../0004/
-[next]: ../0006/
+## 6.A.3.プロジェクトの序盤から活躍できる便利なツールたちの紹介
+
+- [InkScape](http://inkscape.org/index.php?lang=ja)
+
+フリーのベクターグラフィックスソフトウェア。
+Abobe Illustratorほど高機能で重厚な作りでは無いが、
+SVG形式に標準対応しアイコンやデザインの制作に重宝する。
+ラスター画像をPNG形式で書き出す事もできる。
+
+- [Cacoo](https://cacoo.com/)
+
+フリーでもほぼ制限無く使えるベクターグラフィックスベースのウェブサービス。
+複数人で共同でイラストレーションを書いたりチャットしたりも出来る。
+フリープランでもPNGへの書き出しには対応している。
+
+前回の付録でもちらりと紹介した先生が適当に開発してみている"Girls"というシステム。
+こちらのモックアップはCacooで作って居たし、実際に使うアイコンなどはInkScapeで描いている。
+
+![pin](https://github.com/usagi/Girls/blob/master/src/images/pin.png)
+![star](https://github.com/usagi/Girls/blob/master/src/images/star.png)
+
+ちなみに、Girlsはモックアップにクライアントサイドの実装までは済ませた状態まで出来ていて、
+サンプルを <http://Girls.demo.WonderRabbitProject.net/> にて展示して居ます。
+
+[prev]: ../0005/
+[next]: ../0007/
 
 [gist]:   http://gist.github.com/
 [ideone]: http://www.ideone.com/
