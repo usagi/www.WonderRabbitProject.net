@@ -68,42 +68,43 @@ JavaScriptに限らず、プログラミング言語には一般的に演算子�
 
 - [Gist-1](https://gist.github.com/2356610/823cabfada52fad360a0b15ad4f0f3c91c42ad3e)
 
-    var fizz_buzz = {
-      
-      range : {
-        begin : 1,
-        end : 100,
-      },
-      
-      test : function(target_value, test_value) {
-        return target_value % test_value === 0;
-      },
+<pre><code>var fizz_buzz = {
+  
+  range : {
+    begin : 1,
+    end : 100,
+  },
+  
+  test : function(target_value, test_value) {
+    return target_value % test_value === 0;
+  },
+  
+  test_sets : [
+    { value: 3, word: 'Fizz!', },
+    { value: 5, word: 'Buzz!', },
+  ],
+  
+};
+
+for(var n = fizz_buzz.range.begin; n <= fizz_buzz.range.end; n = n + 1) {
+  
+  var words = '';
+  
+  for(var key in fizz_buzz.test_sets) {
     
-      test_sets : [
-        { value: 3, word: 'Fizz!', },
-        { value: 5, word: 'Buzz!', },
-      ],
-      
-    };
+    var test = fizz_buzz.test_sets[key];
     
-    for(var n = fizz_buzz.range.begin; n <= fizz_buzz.range.end; n = n + 1) {
-      
-      var words = '';
-      
-      for(var key in fizz_buzz.test_sets) {
-        
-        var test = fizz_buzz.test_sets[key];
-    
-        if ( fizz_buzz.test(n, test.value) )
-          words = words + test.word;
-      }
-      
-      if ( words === '' )
-        words = String(n);
-      
-      console.log('n:' + n + ' "' + words + '"');
-      
-    }
+    if ( fizz_buzz.test(n, test.value) )
+      words = words + test.word;
+  }
+  
+  if ( words === '' )
+    words = String(n);
+  
+  console.log('n:' + n + ' "' + words + '"');
+  
+}
+</code></pre>
 
 <div class="note">
 Note: ハッシュオブジェクトの定義に余分な`,`がくっついている事に気付いた人もいるかもしれません。
@@ -237,41 +238,42 @@ JavaScriptの単項演算子の`+`と`-`にはもう少々プログラミング�
     - 文字列の長さは文字列オブジェクトに`.length`で取得できる
     - 文字列オブジェクト`'hoge'`は`['h','o','g','e']`と等価である様に振る舞う
 
-    var binary = {
-      
-      number_to_string: function(v) {
-        var r = "";
-        while ( v >= 2 ) {
-          var m = v % 2;
-          r = m + r;
-          if (m === 1)
-            v = (v - 1) / 2;
-          else
-            v = v / 2;
-        }
-        return v + r;
-      },
-    
-      string_to_number: function(v) {
-        var r = 0;
-        var b = 1;
-        var m = v.length - 1;
-        for(var n = 0; n <= m; ++n) {
-          r = r + v[m - n] * b;
-          b = b * 2;
-        }
-        return r;
-      },
-      
-    };
-    
-    var x = 4;
-    
-    var c = binary.number_to_string(x);
-    console.log(c);
-    
-    var s = binary.string_to_number(c);
-    console.log(s);
+<pre><code>var binary = {
+  
+  number_to_string: function(v) {
+    var r = "";
+    while ( v >= 2 ) {
+      var m = v % 2;
+      r = m + r;
+      if (m === 1)
+        v = (v - 1) / 2;
+      else
+        v = v / 2;
+    }
+    return v + r;
+  },
+
+  string_to_number: function(v) {
+    var r = 0;
+    var b = 1;
+    var m = v.length - 1;
+    for(var n = 0; n <= m; ++n) {
+      r = r + v[m - n] * b;
+      b = b * 2;
+    }
+    return r;
+  },
+  
+};
+
+var x = 4;
+
+var c = binary.number_to_string(x);
+console.log(c);
+
+var s = binary.string_to_number(c);
+console.log(s);
+</code></pre>
 
 - [Gist-2](https://gist.github.com/2357298/39310f5dfcaae4841fe0eff5e9ce513a52f65c3e)
 
@@ -367,12 +369,13 @@ Note: 実はJavaScriptには[ECMA-262][ECMA-262]で仕様として定義され�
 - `/` : `a / b` この式は商を求めます
 - `%` : `a % b` この式は剰余を求めます。
 
-    > 1 * 2 * 3
-    6
-    > 1 / 2 / 3
-    0.16666666666666666
-    > 47 % 12
-    11
+<pre><code>> 1 * 2 * 3
+6
+> 1 / 2 / 3
+0.16666666666666666
+> 47 % 12
+11
+</code></pre>
 
 ちなみに、JavaScriptを含めた大抵のプログラミング言語の処理系では、
 事実上、一般的な数式で優先順位が同じ演算子は左側から順に処理されると覚えて措いても構いません。
@@ -717,7 +720,7 @@ Node.jsのインタープリターは賢いので`bi`だけ書いてTABキーを
 
 しかし、これは簡潔でしょうか？
 よく訓練された、その言語での演算子の結合順序と結合性を理解しているプログラマーならば
-簡潔だと応えるかもしれません。
+簡潔だと答えるかもしれません。
 しかし、これは初心者にはやや難しいコードかもしれません。さらに: 
 
     for (var n = 1; n < 100; ++n)
@@ -731,9 +734,9 @@ Node.jsのインタープリターは賢いので`bi`だけ書いてTABキーを
 いわゆるFizzBuzz問題の答えを表示します。
 綺麗に書いて於いたのでまだ読めると感じたかもしれません。
 
-for (var n = 1; n < 100; ++n)
-  console.log((n%3==0?'Fizz!':'')
-  +(n%5==0?'Buzz!':n%3==0?'':n));
+    for (var n = 1; n < 100; ++n)
+      console.log((n%3==0?'Fizz!':'')
+      +(n%5==0?'Buzz!':n%3==0?'':n));
 
 はてさて、これは非プログラマーには
 「よく解らないがすっきりスマートでコンパクトなコピペすれば良い何か」に思えるのかもしれませんが、
