@@ -38,8 +38,8 @@ published: 2012-04-12 00:00
 と、言う事で、
 
 - [Moonlight Barrages (default: 8-FPS/32-OBJS)](http://moonlightbarrages.demo.wonderrabbitproject.net/)
--- [Moonlight Barrages (configured: 60-FPS/512-OBJS)](http://moonlightbarrages.demo.wonderrabbitproject.net/#frames_per_second=60,max_objects=512)
--- [Moonlight Barrages (configured: 60-FPS/512-OBJS/enable-rotate)](http://moonlightbarrages.demo.wonderrabbitproject.net/#frames_per_second=60,max_objects=512)
+    - [Moonlight Barrages (configured: 60-FPS/512-OBJS)](http://moonlightbarrages.demo.wonderrabbitproject.net/#frames_per_second=60,max_objects=512)
+    - [Moonlight Barrages (configured: 60-FPS/512-OBJS/enable-rotate)](http://moonlightbarrages.demo.wonderrabbitproject.net/#frames_per_second=60,max_objects=512)
 
 - [GitHub/usagi/Moonlight-Barrages](https://github.com/usagi/Moonlight-Barrages)
 
