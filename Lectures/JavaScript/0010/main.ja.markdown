@@ -4,7 +4,7 @@ parent:    JavaScript ⇠ Lectures
 published: 2012-04-12 00:00
 --
 
-<a target="_blank" href="https://github.com/usagi/www.WonderRabbitProject.net/commits/master/Lectures/JavaScript/0009/main.ja.markdown">
+<a target="_blank" href="https://github.com/usagi/www.WonderRabbitProject.net/commits/master/Lectures/JavaScript/0010/main.ja.markdown">
 <ul class="datetime">
   <li class="published"><time pubdate datetime="$published$">$published$</time>
   <li>change log is here
